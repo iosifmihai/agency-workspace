@@ -185,6 +185,43 @@ Toate fișierele de mai sus sunt [din fișiere].
 - Nu deformează logo-ul, nu îl recolorează și nu inventează variante noi.
 - Nu vorbește corporatist sau tehnic cu publicul de acasă.
 
+## 8b. Din site-ul actual (lucasbites.ro, citit la 11.10.2026)
+
+Site-ul WordPress actual rămâne sursă de informații până la mutarea pe site-ul nou. [confirmat, 11.10.2026] Tag nou: **[din site actual]**.
+
+### Povestea brandului [din site actual, pagina /povestea-noastra/]
+- „Noi suntem o familie tânără, cu un copilaș delicios, pasionați de frumos și de bucătărie.”
+- „Totul a pornit într-o zi, când ne-am dat seama că micuțul nostru este pur și simplu îndrăgostit de clătitele americane, le-ar fi mâncat dimineața, la prânz și seara, cu topping sau fără, mici sau mari, pufoase să fie!”
+- „S-a născut firma LUCAS BITES, pentru că sunt gustările preferate ale lui Luca și PANKEES pentru că așa le alinta el.”
+- „Noi credem că cel mai important și plăcut moment al zilei este acela când ne strângem toți, în jurul mesei și ne bucurăm împreună de mâncare bună și povești frumoase.”
+- „Ideea noastră a fost să creăm acele clătite americane pe care să le poată face oricine în casă, doar adăugând apă.”
+- Ce nu știm încă: anul înființării, orașul, unde se produc mixurile, numele fondatorilor. [de confirmat]
+
+### Ce adaugi la preparare [din site actual, paginile de produs]
+| Produs | Ce adaugi |
+|---|---|
+| Classic Pankees (și gama Pankees) | apă (sau lapte) până la semnul de pe sticlă, 4-5 agitări; opțional un capac de ulei. Nu e nevoie de lapte sau ouă: mixul conține lapte praf și praf de ou. |
+| Crêpes Mix Original (fără zahăr adăugat) | 675 ml apă, amestecat cu telul într-un bol |
+| Pizza Crust Mix | 260 g apă călduță + 25 g ulei de măsline; ajunge pentru 3 pizza |
+| Lava Cake Mix | 3 ouă + 250 g unt topit; 8 porții x 50 g, cuptor 210°C, 7-8 minute |
+| Brownie Mix | 3 ouă + 50 ml apă + 125 ml ulei sau unt topit |
+
+### Ingrediente: nuanțe de reținut [din site actual]
+- Classic Pankees: făină de grâu, zahăr brun din trestie, lapte praf, ouă, agenți de afânare, sare. Conține gluten, lapte, ouă.
+- Pizza Crust Mix conține un emulsificator (monostearat de sorbitan) și difosfat disodic ca agent de afânare. „Fără conservanți” rămâne valabil, dar **nu folosim „fără E-uri”** pentru toată gama.
+- Brownie Mix conține ciocolată, care are în compoziție zahăr. „Zahăr brun în loc de zahăr alb” e adevărat pentru zahărul adăugat în mix, dar nu îl formulăm absolut la brownie. [propunere]
+
+### Ce NU preluăm de pe site-ul actual [propunere]
+Site-ul actual folosește afirmații de sănătate: „produse naturale și sănătoase”, „100% sigure pentru sănătatea dumneavoastră și a copiilor”, „mult mai sănătos decât zahărul alb”, „E-uri periculoase”. Nu le preluăm. Contrazic regulile de ton din secțiunea 3 și pot încălca regulile UE privind mențiunile nutriționale și de sănătate (Regulamentul CE 1924/2006).
+
+### Dovadă socială: două cifre diferite [de confirmat]
+- Site-ul nou (aprobat): „Peste 1.100 de recenzii, cu o medie de 4,9 din 5”.
+- Site-ul actual, pe pagina /povestea-noastra/: badge „Verificat independent, 4.83 rating (3017 reviews)”.
+Până la confirmare, folosim cifra aprobată (1.100 / 4,9).
+
+### Categorii pe site-ul actual
+Pankees - Crêpes, Brownie / Lava Cake, Cookie Mix, Pizza Mix, Produse de post, Produse profesionale, Îndulcitori naturali. Pagina de rețete are și rețete cu Muffin Mix și Donut Mix.
+
 ## 9. De confirmat
 
 ### Răspunsuri primite de la client (10.10.2026)
