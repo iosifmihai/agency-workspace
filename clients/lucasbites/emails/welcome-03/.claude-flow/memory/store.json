@@ -1,0 +1,14 @@
+{
+  "entries": {
+    "cmd-1791737097247": {
+      "key": "cmd-1791737097247",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/welcome-03 && ls -la . images assets 2>/dev/null\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:44:57.247Z",
+      "lastAccessed": "2026-10-11T16:44:57.247Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:44:57.247Z"
+    }
+  },
+  "version": "3.0.0"
+}

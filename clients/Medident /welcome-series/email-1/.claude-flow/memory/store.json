@@ -1,0 +1,77 @@
+{
+  "entries": {
+    "cmd-1791651601305": {
+      "key": "cmd-1791651601305",
+      "value": "{\"command\":\"cd \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /welcome-series/email-1\\\" && wc -c strategy-and-copy.md && grep -nE \\\"^#|BLOCK|\\\\[NOU\\\\]|\\\\[MODIFICAT\\\\]\\\" strategy-and-copy.md | head -60\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:00:01.305Z",
+      "lastAccessed": "2026-10-10T17:00:01.305Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:00:01.305Z"
+    },
+    "cmd-1791651647419": {
+      "key": "cmd-1791651647419",
+      "value": "{\"command\":\"cd \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /\\\"; ls -la welcome-series/email-1 2026-10-26-kometabio; wc -c welcome-series/email-1/* 2026-10-26-kometabio/*\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:00:47.419Z",
+      "lastAccessed": "2026-10-10T17:00:47.419Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:00:47.419Z"
+    },
+    "cmd-1791651683266": {
+      "key": "cmd-1791651683266",
+      "value": "{\"command\":\"cd \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /\\\"; sed -n '/### 2. hero/,/### 9. cta-secondary/p' welcome-series/email-1/strategy-and-copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:01:23.266Z",
+      "lastAccessed": "2026-10-10T17:01:23.266Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:01:23.266Z"
+    },
+    "cmd-1791651713722": {
+      "key": "cmd-1791651713722",
+      "value": "{\"command\":\"cd \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /\\\"; cat 2026-10-26-kometabio/design-notes.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:01:53.722Z",
+      "lastAccessed": "2026-10-10T17:01:53.722Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:01:53.722Z"
+    },
+    "cmd-1791651749105": {
+      "key": "cmd-1791651749105",
+      "value": "{\"command\":\"cd \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /2026-10-26-kometabio\\\"; grep -n \\\"BLOCK:\\\" newsletter.html | sed -n '1,80p'; wc -l newsletter.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:02:29.105Z",
+      "lastAccessed": "2026-10-10T17:02:29.105Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:02:29.105Z"
+    },
+    "cmd-1791651887227": {
+      "key": "cmd-1791651887227",
+      "value": "{\"command\":\"mkdir -p /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/80eb5e78-92f4-4911-ac88-7400973dd100/scratchpad && cat > /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/80eb5e78-92f4-4911-ac88-7400973dd100/scratchpad/val.py <<'EOF'\\nimport sys, re, os\\nfrom html.parser import HTMLParser\\np=sys.argv[1]; s=open(p,encoding='utf-8').read()\\nprint(\\\"bytes\\\",os.path.getsize(p))\\nVOID={'meta','img','br','link','hr','input'}\\nclass P(HTMLParser):\\n    def __init__(s):\\n        super().__init__(); s.st=[]; s.err=[]; s.a=0; s.img=0\\n    def handle_starttag(s,t,a):\\n        d=dict(a)\\n        if t=='a':\\n            s.a+=1\\n            if not d.get('href'): s.err.append(('a no href',s.getpos()))\\n        if t=='img':\\n            s.img+=1\\n            if 'alt' not in d or not d['alt']: s.err.append(('img no alt',s.getpos()))\\n        if t not in VOID: s.st.append((t,s.getpos()))\\n    def handle_endtag(s,t):\\n        if t in VOID: return\\n        if not s.st or s.st[-1][0]!=t: s.err.append(('mismatch',t,s.getpos(),s.st[-1] if s.st else None)); return\\n        s.st.pop()\\nx=P(); x.feed(s); print(\\\"a\\\",x.a,\\\"img\\\",x.img,\\\"errors\\\",x.err,\\\"unclosed\\\",x.st)\\nbody=re.sub(r'<!--.*?-->','',s,flags=re.S)\\nprint(\\\"emdash/endash in visible:\\\", [c for c in ['—','–'] if c in body])\\nprint(\\\"cedilla wrong chars:\\\", [c for c in 'şţŞŢ' if c in s])\\ndef L(h):\\n    r=[int(h[i:i+2],16)/255 for i in (0,2,4)]\\n    r=[c/12.92 if c<=0.03928 else ((c+0.055)/1.055)**2.4 for c in r]\\n    return .2126*r[0]+.7152*r[1]+.0722*r[2]\\ndef cr(a,b):\\n    a,b=L(a),L(b); return round((max(a,b)+.05)/(min(a,b)+.05),2)\\nprint(\\\"C74400/white\\\",cr('C74400','FFFFFF'),\\\"000/FAE1D3\\\",cr('000000','FAE1D3'),\\\"555/white\\\",cr('555555','FFFFFF'),\\\"FF5E08/1E1E1E\\\",cr('FF5E08','1E1E1E'),\\\"F2F2F2/3A2A20\\\",cr('F2F2F2','3A2A20'))\\nEOF\\npython3 -I /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/80eb5e78-92f4-4911-ac88-7400973dd100/scratchpad/val.py \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /welcome-series/email-1/email-1.html\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:04:47.227Z",
+      "lastAccessed": "2026-10-10T17:04:47.227Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:04:47.227Z"
+    },
+    "cmd-1791651954895": {
+      "key": "cmd-1791651954895",
+      "value": "{\"command\":\"cd \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /welcome-series/email-1\\\" && ls -la && for s in \\\"Bun venit în comunitatea Medident Exim!\\\" \\\"minimum 115 lei\\\" \\\"Plasează o comandă\\\" \\\"Împreună de peste 25 de ani\\\" \\\"Descoperă produsele Medident\\\" \\\"0268.31.55.44\\\" \\\"[COD_UNIC]\\\" \\\"Trimis cu drag din Brașov\\\"; do printf \\\"%s: \\\" \\\"$s\\\"; grep -ciF \\\"$s\\\" email-1.html; done; grep -o 'href=\\\"[^\\\"]*\\\"' email-1.html | sort -u\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:05:54.895Z",
+      "lastAccessed": "2026-10-10T17:05:54.895Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:05:54.895Z"
+    },
+    "cmd-1791651987960": {
+      "key": "cmd-1791651987960",
+      "value": "{\"command\":\"open \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /welcome-series/email-1/email-1.html\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T17:06:27.960Z",
+      "lastAccessed": "2026-10-10T17:06:27.960Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T17:06:27.960Z"
+    }
+  },
+  "version": "3.0.0"
+}

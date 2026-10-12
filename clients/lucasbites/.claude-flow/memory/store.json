@@ -1,0 +1,14 @@
+{
+  "entries": {
+    "cmd-1791735288411": {
+      "key": "cmd-1791735288411",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && cat discovery.md && for d in emails/welcome-01 emails/welcome-02; do echo \\\"=== $d\\\"; cat $d/brief.md $d/copy.md $d/image-prompts.md; ls -la $d/images $d/refs $d/assets; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:14:48.411Z",
+      "lastAccessed": "2026-10-11T16:14:48.411Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:14:48.411Z"
+    }
+  },
+  "version": "3.0.0"
+}

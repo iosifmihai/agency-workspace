@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ro" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>Bun venit la Medident Exim</title>
+<!--
+  Medident Exim | Welcome Series, Email 1 | [DWF] Welcome 1 - Bun venit + cadou mănuși
+  Automatizare theMarketer, trigger: abonare nouă (după confirmare, dacă formularul are double opt-in). Timing: imediat.
+  Copy final: strategy-and-copy.md (10.10.2026). Template DWF: 700px, Poppins, #FF5E08, #FAE1D3, footer negru.
+
+  SUBIECTE (se setează în theMarketer, nu în HTML):
+    A (recomandat): Îți mulțumim pentru abonare
+       Preheader A: Cadoul tău de bun venit: o cutie de mănuși, din partea noastră
+    B: Bun venit! O cutie de mănuși te așteaptă
+       Preheader B: Codul tău unic și o cutie de mănuși gratuită la prima comandă.
+    C: Bun venit la Medident Exim: cadoul tău e în interior
+       Preheader C: Cadoul tău de bun venit: o cutie de mănuși, din partea noastră
+    Test A/B doar peste ~500 abonați noi pe lună. Altfel rulează A și se revizuiește după 60 de zile.
+
+  Marcaje în cod:
+    BLOCK: nume       = bloc de text, ușor de înlocuit
+    [CLIENT] / [NOU]  = sursa textului (vezi legenda din strategy-and-copy.md)
+    [MODIFICAT]       = propunere a agenției, doar în comentarii; textul vizibil rămâne cel al clientului
+    DE CONFIRMAT      = afirmație sau setare care așteaptă confirmarea clientului (strategy-and-copy.md, secțiunea 4)
+    TODO-ASSET        = imagine de înlocuit înainte de test
+  UTM: linkurile medidentexim.ro au UTM complet, conform tabelului din strategie
+    (utm_source=themarketer&utm_medium=email&utm_campaign=welcome_email1 + utm_content).
+    Dacă theMarketer adaugă UTM automat pe automatizare, se scot source/medium/campaign din HTML, ca să nu se dubleze.
+-->
+<!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!--<![endif]-->
+<!--[if mso]>
+<noscript><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<style type="text/css">
+  body, table, td, p, a, span, h1 { font-family: Arial, Helvetica, sans-serif !important; }
+  .code { font-family: 'Courier New', Courier, monospace !important; }
+</style>
+<![endif]-->
+<style type="text/css">
+  html, body { margin:0 !important; padding:0 !important; width:100% !important; }
+  * { -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; }
+  table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse; }
+  img { -ms-interpolation-mode:bicubic; border:0; outline:none; text-decoration:none; display:block; }
+  a { text-decoration:none; }
+  a[x-apple-data-detectors], .unstyle-auto-detected-links a { color:inherit !important; text-decoration:none !important; font-size:inherit !important; font-family:inherit !important; font-weight:inherit !important; line-height:inherit !important; }
+  u + #body a { color:inherit; text-decoration:none; font-size:inherit; font-family:inherit; font-weight:inherit; line-height:inherit; }
+  #MessageViewBody a { color:inherit; text-decoration:none; font-size:inherit; font-family:inherit; font-weight:inherit; line-height:inherit; }
+  .btn-a:hover { opacity:0.9; }
+
+  /* Mobil: <=520px */
+  @media only screen and (max-width:520px) {
+    .container { width:100% !important; max-width:100% !important; }
+    .px { padding-left:20px !important; padding-right:20px !important; }
+    .img-fluid { width:100% !important; max-width:100% !important; height:auto !important; }
+    .h1 { font-size:22px !important; line-height:30px !important; }
+    .h2 { font-size:18px !important; line-height:26px !important; }
+    .code { font-size:22px !important; letter-spacing:2px !important; }
+    .code-pad { padding-left:16px !important; padding-right:16px !important; }
+    .btn-a { display:block !important; padding-left:12px !important; padding-right:12px !important; }
+    .trust td.tcell { display:block !important; width:100% !important; padding:6px 0 !important; }
+  }
+
+  /* Dark mode (Apple Mail, iOS Mail, Outlook macOS) */
+  @media (prefers-color-scheme: dark) {
+    .dm-bg { background-color:#141414 !important; }
+    .dm-card { background-color:#1E1E1E !important; }
+    .dm-peach { background-color:#3A2A20 !important; }
+    .dm-text, .dm-text p, .dm-text td, .dm-text span, .dm-text h1, .dm-text a { color:#F2F2F2 !important; }
+    .dm-text .accent, .accent { color:#FF5E08 !important; }
+    .dm-muted { color:#BDBDBD !important; }
+    .dm-logo-bg { background-color:#FFFFFF !important; }
+    .btn-o { color:#FF5E08 !important; background-color:#1E1E1E !important; }
+  }
+  /* Outlook.com / aplicația Outlook, dark mode */
+  [data-ogsc] .dm-text, [data-ogsc] .dm-text p, [data-ogsc] .dm-text h1, [data-ogsc] .dm-text a, [data-ogsc] .dm-text span { color:#F2F2F2 !important; }
+  [data-ogsc] .dm-muted { color:#BDBDBD !important; }
+  [data-ogsc] .btn-o { color:#FF5E08 !important; }
+  [data-ogsb] .dm-peach { background-color:#3A2A20 !important; }
+</style>
+</head>
+<body id="body" class="dm-bg" style="margin:0; padding:0; background-color:#F4F4F4; word-spacing:normal;">
+
+<!-- BLOCK: preheader [CLIENT] (varianta A; pentru B/C vezi comentariul din head) -->
+<div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all; font-family:Arial, sans-serif;">
+  Cadoul tău de bun venit: o cutie de mănuși, din partea noastră
+  &#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="dm-bg" style="background-color:#F4F4F4;">
+<tr>
+<td align="center" style="padding:0;">
+
+<!--[if mso]><table role="presentation" width="700" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td><![endif]-->
+<table role="presentation" class="container" width="700" cellpadding="0" cellspacing="0" border="0" align="center" style="width:700px; max-width:700px; background-color:#FFFFFF;">
+
+  <!-- BLOCK: logo [NOU] (fără meniul portocaliu: în emailul de bun venit atenția rămâne pe cod) -->
+  <tr>
+    <td class="dm-logo-bg" align="center" style="padding:18px 30px 18px 30px; background-color:#FFFFFF;">
+      <a href="https://medidentexim.ro/?utm_source=themarketer&amp;utm_medium=email&amp;utm_campaign=welcome_email1&amp;utm_content=logo" target="_blank" style="display:inline-block;">
+        <img src="https://medidentexim.ro/userfiles/39dd3864-ceac-4229-a253-a1835c540a3e/Image/logo_medident_925x240_v9.png" width="220" height="57" alt="Medident Exim, Your Dentality Partner" style="display:block; width:220px; height:auto; border:0; font-family:Arial, sans-serif; font-size:16px; font-weight:bold; color:#FF5E08;">
+      </a>
+    </td>
+  </tr>
+
+  <!-- BLOCK: hero [NOU]
+       TODO-ASSET: înlocuiește src cu fotografia cutiei de mănuși By Medident pe fundal piersică #FAE1D3, cu fundă/etichetă portocalie #FF5E08,
+       export 1400x800 (afișat 700x400), fără text în imagine, fără umbre dure. Păstrează width="700".
+       DE CONFIRMAT: modelul cutiei (punctul 4) și sursa fotografiei (punctul 10). Link: ca cta-primary, utm_content=hero (DE CONFIRMAT). -->
+  <tr>
+    <td align="center" style="padding:0; background-color:#FAE1D3;">
+      <a href="https://medidentexim.ro/?utm_source=themarketer&amp;utm_medium=email&amp;utm_campaign=welcome_email1&amp;utm_content=hero" target="_blank" style="display:block;">
+        <img src="https://placehold.co/1400x800/FAE1D3/FF5E08?text=Cutie+manusi+By+Medident" width="700" height="400" class="img-fluid" alt="Cutie de mănuși By Medident, cadou la prima comandă pe medidentexim.ro" style="display:block; width:100%; max-width:700px; height:auto; border:0; font-family:Arial, sans-serif; font-size:16px; line-height:22px; color:#000000; background-color:#FAE1D3;">
+      </a>
+    </td>
+  </tr>
+
+  <!-- BLOCK: headline [CLIENT] -->
+  <tr>
+    <td class="px dm-card dm-text" align="center" style="padding:36px 30px 6px 30px; background-color:#FFFFFF;">
+      <h1 class="h1" style="margin:0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:24px; line-height:32px; font-weight:700; color:#000000; text-align:center; mso-line-height-rule:exactly;">Bun venit în comunitatea Medident Exim!</h1>
+    </td>
+  </tr>
+
+  <!-- BLOCK: intro [CLIENT]
+       DE CONFIRMAT: pragul „115 lei” (comanda minimă pe site este 110 lei), punctul 2.
+       [MODIFICAT] propus, dacă oferta se aplică la orice primă comandă: „La prima ta comandă, primești cadou o cutie de mănuși.”
+       DE CONFIRMAT: „o adăugăm direct în colet” presupune adăugare manuală de către depozit, punctul 4. -->
+  <tr>
+    <td class="px dm-card dm-text" align="center" style="padding:14px 40px 28px 40px; background-color:#FFFFFF; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:15px; line-height:150%; color:#000000; text-align:center;">
+      <p style="margin:0;">Mănușile sunt printre produsele pe care le folosești zilnic în cabinet, așa că ne-am gândit să începem cu ceva cu adevărat util. La prima ta comandă de minimum <strong>115 lei</strong>, primești cadou o cutie de mănuși. Introdu codul de mai jos la finalizarea comenzii și o adăugăm direct în colet.</p>
+    </td>
+  </tr>
+
+  <!-- BLOCK: code-box [NOU]
+       DE CONFIRMAT: [COD_UNIC] și [DATA_EXPIRARE] sunt placeholdere, nu merge tag-uri theMarketer.
+       Se înlocuiesc cu tag-urile reale după ce verificăm cum generează theMarketer coduri unice per contact (punctul 3).
+       Dacă nu există dată de expirare, se șterge „Valabil până pe [DATA_EXPIRARE],” și rămâne doar pragul.
+       Codul e text (selectabil), nu imagine, ca să fie lizibil și cu imaginile blocate. -->
+  <tr>
+    <td class="px dm-card" style="padding:0 30px 0 30px; background-color:#FFFFFF;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="dm-peach" bgcolor="#FAE1D3" style="background-color:#FAE1D3; border:2px dashed #FF5E08; border-radius:12px;">
+        <tr>
+          <td class="dm-text code-pad" align="center" style="padding:26px 26px 6px 26px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:13px; line-height:20px; font-weight:700; letter-spacing:1.5px; color:#000000; text-align:center;">CODUL TĂU DE BUN VENIT</td>
+        </tr>
+        <tr>
+          <td class="dm-text code-pad" align="center" style="padding:6px 26px 8px 26px; text-align:center;">
+            <span class="code" style="display:inline-block; font-family:'Courier New', Courier, monospace; font-size:28px; line-height:38px; font-weight:700; letter-spacing:4px; color:#000000; -webkit-user-select:all; user-select:all; mso-line-height-rule:exactly;">[COD_UNIC]</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="dm-text code-pad" align="center" style="padding:4px 26px 26px 26px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:14px; line-height:150%; color:#000000; text-align:center;">Valabil până pe <strong>[DATA_EXPIRARE]</strong>, la prima comandă de minimum 115 lei.</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- BLOCK: code-howto [NOU] -->
+  <tr>
+    <td class="px dm-card dm-muted" align="center" style="padding:16px 40px 0 40px; background-color:#FFFFFF; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:13px; line-height:150%; color:#555555; text-align:center;">
+      Cum folosești codul: adaugi produsele în coș, introduci codul la finalizarea comenzii, iar cutia de mănuși ajunge în același colet cu comanda ta.
+    </td>
+  </tr>
+  <!-- BLOCK: free-shipping [NOU] (opțional, se poate șterge rândul; fapt verificat pe site [W3]) -->
+  <tr>
+    <td class="px dm-card dm-muted" align="center" style="padding:6px 40px 0 40px; background-color:#FFFFFF; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:13px; line-height:150%; color:#555555; text-align:center;">
+      Livrare gratuită la comenzile de peste 290 lei.
+    </td>
+  </tr>
+
+  <!-- BLOCK: cta-primary [CLIENT]
+       DE CONFIRMAT: destinația (propunere: homepage; alternativ pagina consumabilelor uzuale sau a mănușilor), punctul 9. -->
+  <tr>
+    <td class="px dm-card" align="center" style="padding:24px 30px 38px 30px; background-color:#FFFFFF;">
+      <!--[if mso]>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://medidentexim.ro/?utm_source=themarketer&amp;utm_medium=email&amp;utm_campaign=welcome_email1&amp;utm_content=cta-comanda" style="height:40px; v-text-anchor:middle; width:260px;" arcsize="50%" stroke="f" fillcolor="#FF5E08">
+        <w:anchorlock/>
+        <center style="color:#FFFFFF; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold;">Plasează o comandă</center>
+      </v:roundrect>
+      <![endif]-->
+      <!--[if !mso]><!-->
+      <a href="https://medidentexim.ro/?utm_source=themarketer&amp;utm_medium=email&amp;utm_campaign=welcome_email1&amp;utm_content=cta-comanda" target="_blank" class="btn-a" style="display:inline-block; min-width:200px; background-color:#FF5E08; color:#FFFFFF; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:15px; line-height:40px; font-weight:700; letter-spacing:0.3px; text-decoration:none; text-align:center; border-radius:20px; padding:0 30px;">Plasează o comandă</a>
+      <!--<![endif]-->
+    </td>
+  </tr>
+
+  <!-- separator -->
+  <tr><td class="px dm-card" style="padding:0 30px; background-color:#FFFFFF;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="1" style="height:1px; line-height:1px; font-size:1px; background-color:#B3C0CE;">&nbsp;</td></tr></table></td></tr>
+
+  <!-- BLOCK: about-headline [CLIENT]
+       DE CONFIRMAT: vechimea, punctul 1.
+       [MODIFICAT] propus: „Împreună de 27 de ani, alături de profesioniștii din stomatologie” (regula din discovery, 10.10.2026).
+       Alternativă care nu expiră: „din 1998”. -->
+  <tr>
+    <td class="px dm-card dm-text" style="padding:32px 30px 6px 30px; background-color:#FFFFFF;">
+      <p class="h2" style="margin:0; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:20px; line-height:28px; font-weight:700; color:#000000; mso-line-height-rule:exactly;">Împreună de peste 25 de ani, alături de profesioniștii din stomatologie</p>
+    </td>
+  </tr>
+
+  <!-- BLOCK: about-body [CLIENT]
+       [MODIFICAT] propus pentru paragraful 1: „De 27 de ani, Medident Exim este partenerul…” (restul neschimbat). DE CONFIRMAT, punctul 1. -->
+  <tr>
+    <td class="px dm-card dm-text" style="padding:12px 30px 8px 30px; background-color:#FFFFFF; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:15px; line-height:150%; color:#000000;">
+      <p style="margin:0 0 14px 0;">De peste 25 de ani, Medident Exim este partenerul cabinetelor stomatologice și laboratoarelor de tehnică dentară din România. Aducem produse de la branduri de referință, precum KaVo, Ivoclar, GC, Solventum sau Renfert, și te ajutăm să alegi soluția potrivită pentru activitatea ta.</p>
+      <p style="margin:0;">Pentru noi, o comandă nu se încheie la livrare. Îți oferim consultanță înainte de achiziție, suport tehnic după, și cursuri susținute de lectori cu experiență academică și clinică, ca să crești profesional alături de noi.</p>
+    </td>
+  </tr>
+
+  <!-- BLOCK: cta-secondary [CLIENT] (buton contur: chenar #FF5E08, text #C74400 pentru contrast AA pe alb)
+       DE CONFIRMAT: destinația /produse/promotii (alternativă: homepage), punctul 9. -->
+  <tr>
+    <td class="px dm-card" align="center" style="padding:22px 30px 14px 30px; background-color:#FFFFFF;">
+      <!--[if mso]>
+      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://medidentexim.ro/produse/promotii?utm_source=themarketer&amp;utm_medium=email&amp;utm_campaign=welcome_email1&amp;utm_content=cta-produse" style="height:40px; v-text-anchor:middle; width:320px;" arcsize="50%" stroke="t" strokecolor="#FF5E08" strokeweight="2px" fillcolor="#FFFFFF">
+        <w:anchorlock/>
+        <center style="color:#C74400; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold;">Descoperă produsele Medident</center>
+      </v:roundrect>
+      <![endif]-->
+      <!--[if !mso]><!-->
+      <a href="https://medidentexim.ro/produse/promotii?utm_source=themarketer&amp;utm_medium=email&amp;utm_campaign=welcome_email1&amp;utm_content=cta-produse" target="_blank" class="btn-a btn-o" style="display:inline-block; min-width:200px; background-color:#FFFFFF; color:#C74400; border:2px solid #FF5E08; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:15px; line-height:36px; font-weight:700; letter-spacing:0.3px; text-decoration:none; text-align:center; border-radius:20px; padding:0 28px;">Descoperă produsele Medident</a>
+      <!--<![endif]-->
+    </td>
+  </tr>
+
+  <!-- BLOCK: contact-line [NOU] (telefon: centrala, regula din 10.10.2026; DE CONFIRMAT înlocuirea lui 0732 500 341 în toată seria, punctul 7) -->
+  <tr>
+    <td class="px dm-card dm-text" align="center" style="padding:6px 30px 34px 30px; background-color:#FFFFFF; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:14px; line-height:150%; color:#000000; text-align:center;">
+      Ai nevoie de ajutor la prima comandă? Sună-ne la <a href="tel:+40268315544" style="color:#000000; font-weight:700; text-decoration:underline;">0268.31.55.44</a> sau scrie-ne la <a href="mailto:office@medidentexim.ro" style="color:#000000; text-decoration:underline;">office@medidentexim.ro</a>.
+    </td>
+  </tr>
+
+  <!-- BLOCK: trust-strip [NOU] (bandă piersică) -->
+  <tr>
+    <td class="px dm-peach" bgcolor="#FAE1D3" style="padding:18px 30px; background-color:#FAE1D3;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="trust">
+        <tr>
+          <td class="tcell dm-text" width="33%" align="center" valign="middle" style="padding:0 6px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#000000;"><span class="accent" style="color:#FF5E08; font-size:16px;" aria-hidden="true">&#10003;</span>&nbsp;Precizie garantată</td>
+          <td class="tcell dm-text" width="34%" align="center" valign="middle" style="padding:0 6px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#000000;"><span class="accent" style="color:#FF5E08; font-size:16px;" aria-hidden="true">&#10003;</span>&nbsp;Suport tehnic și service</td>
+          <td class="tcell dm-text" width="33%" align="center" valign="middle" style="padding:0 6px; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:13px; line-height:20px; font-weight:600; color:#000000;"><span class="accent" style="color:#FF5E08; font-size:16px;" aria-hidden="true">&#10003;</span>&nbsp;Livrare rapidă din stoc</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- BLOCK: signature [NOU] -->
+  <tr>
+    <td class="px dm-card dm-text" style="padding:28px 30px 34px 30px; background-color:#FFFFFF; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:15px; line-height:150%; color:#000000;">
+      <p style="margin:0;"><strong>Echipa Medident Exim</strong></p>
+    </td>
+  </tr>
+
+  <!-- BLOCK: footer
+       Se poate folosi în locul acestui bloc footer-ul nativ theMarketer (inserează automat dezabonarea).
+       {{unsubscribe_link}} este tag-ul theMarketer de dezabonare folosit în template-ul DWF; de verificat în editorul automatizării.
+       Linkul „pagină web” vine din componenta nativă de footer theMarketer (nu există merge tag), de aceea nu e în HTML.
+       Header List-Unsubscribe (one-click) trebuie să fie activ pe automatizare. -->
+  <tr>
+    <td class="px" bgcolor="#000000" align="center" style="padding:32px 30px 30px 30px; background-color:#000000;">
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+          <td style="padding:0 8px;"><a href="https://www.facebook.com/medidentexim" target="_blank"><img src="https://cdn1.mktr2.com/email-campaigns/assets/footer/rounded-white/fb-icon.png" width="32" height="32" alt="Facebook Medident Exim" style="display:block; width:32px; height:32px; border:0; font-family:Arial, sans-serif; font-size:11px; color:#FFFFFF;"></a></td>
+          <td style="padding:0 8px;"><a href="https://www.youtube.com/@medidentexim8265" target="_blank"><img src="https://cdn1.mktr2.com/email-campaigns/assets/footer/rounded-white/yt-icon.png" width="32" height="32" alt="YouTube Medident Exim" style="display:block; width:32px; height:32px; border:0; font-family:Arial, sans-serif; font-size:11px; color:#FFFFFF;"></a></td>
+          <td style="padding:0 8px;"><a href="https://www.instagram.com/medident.exim" target="_blank"><img src="https://cdn1.mktr2.com/email-campaigns/assets/footer/rounded-white/ig-icon.png" width="32" height="32" alt="Instagram Medident Exim" style="display:block; width:32px; height:32px; border:0; font-family:Arial, sans-serif; font-size:11px; color:#FFFFFF;"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <!-- BLOCK: gdpr (VERBATIM, nu se modifică)
+         DE CONFIRMAT, punctul 8: ultimul paragraf descrie relația B2B, nu abonarea prin formular.
+         [MODIFICAT] propus pentru automatizare, în locul ultimului paragraf:
+         „Primești acest email pentru că te-ai abonat la newsletterul Medident Exim pe medidentexim.ro.” -->
+    <td class="px" bgcolor="#000000" style="padding:0 30px 34px 30px; background-color:#000000; font-family:'Poppins', Arial, Helvetica, sans-serif; font-size:11px; line-height:17px; color:#FFFFFF; text-align:center;">
+      <p style="margin:0 0 8px 0; font-size:12px; font-weight:700; color:#FFFFFF;">Confidențialitate</p>
+      <p style="margin:0 0 10px 0; color:#FFFFFF;">Având în vedere noile prevederi ale Regulamentului UE privind confidențialitatea și protecția datelor cu caracter personal, MEDIDENT EXIM are nevoie de acordul dvs. pentru a vă putea transmite în continuare comunicări de tip newsletter. Vă informăm faptul că datele cu caracter personal (nume, prenume, adresă de e-mail, loc de muncă, număr telefon) care se regăsesc în bazele noastre de date, obținute prin înregistrarea dvs. la serviciile noastre, sunt utilizate numai în scopul trimiterii de mesaje și în contextul participării la un eveniment medical organizat de Medident Exim.</p>
+      <p style="margin:0 0 10px 0; color:#FFFFFF;">Vă informăm că aveți posibilitatea de a reveni asupra deciziei acceptului de comunicare în orice moment și totodată puteți solicita orice informații suplimentare referitoare la datele dumneavoastră, contactându-ne la <a href="mailto:office@medidentexim.ro" style="color:#FFFFFF; text-decoration:underline;">office@medidentexim.ro</a>.</p>
+      <p style="margin:0 0 16px 0; color:#FFFFFF;">Ați primit acest e-mail pentru că vă aflați în baza de date a Medident Exim în urma interacțiunii profesionale din domeniul stomatologic și a relației de tip B2B.</p>
+      <p style="margin:0 0 16px 0; font-size:12px; font-weight:600; color:#FFFFFF;">Trimis cu drag din Brașov.</p>
+      <!-- BLOCK: unsubscribe (merge tag theMarketer) -->
+      <p style="margin:0; color:#BFBFBF;">
+        <a href="{{unsubscribe_link}}" style="color:#FFFFFF; text-decoration:underline;">Dezabonare</a>
+      </p>
+    </td>
+  </tr>
+
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+
+</td>
+</tr>
+</table>
+</body>
+</html>

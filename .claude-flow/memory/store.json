@@ -1,0 +1,104 @@
+{
+  "entries": {
+    "cmd-1791651283529": {
+      "key": "cmd-1791651283529",
+      "value": "{\"command\":\"ls -la Clients/Medident 2>/dev/null || find . -maxdepth 3 -iname \\\"*medident*\\\" -not -path \\\"*/node_modules/*\\\"; echo ---; find Clients/Medident -type f 2>/dev/null | head -100\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T16:54:43.529Z",
+      "lastAccessed": "2026-10-10T16:54:43.529Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T16:54:43.529Z"
+    },
+    "cmd-1791651325944": {
+      "key": "cmd-1791651325944",
+      "value": "{\"command\":\"cd \\\"/Users/andreea/Documents/iosifmihai/clients/Medident \\\" && find . -type f -not -name \\\".DS_Store\\\" -exec ls -la {} \\\\;\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T16:55:25.944Z",
+      "lastAccessed": "2026-10-10T16:55:25.944Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T16:55:25.944Z"
+    },
+    "cmd-1791651369297": {
+      "key": "cmd-1791651369297",
+      "value": "{\"command\":\"mkdir -p \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /welcome-series/email-1\\\" && grep -n \\\"BLOCK:\\\" \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /2026-10-26-kometabio/newsletter.html\\\" | head -40\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T16:56:09.297Z",
+      "lastAccessed": "2026-10-10T16:56:09.297Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T16:56:09.297Z"
+    },
+    "cmd-1791651467221": {
+      "key": "cmd-1791651467221",
+      "value": "{\"command\":\"python3 -c \\\"\\nfor s in ['Îți mulțumim pentru abonare','Cadoul tău de bun venit: o cutie de mănuși, din partea noastră','Bun venit! O cutie de mănuși te așteaptă','La prima comandă, cutia de mănuși e din partea noastră. Codul tău e în email.','Bun venit la Medident Exim: cadoul tău e în interior','Codul tău unic și o cutie de mănuși gratuită la prima comandă.']: print(len(s), s)\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T16:57:47.221Z",
+      "lastAccessed": "2026-10-10T16:57:47.221Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T16:57:47.221Z"
+    },
+    "cmd-1791651561972": {
+      "key": "cmd-1791651561972",
+      "value": "{\"command\":\"grep -n \\\"—\\\" \\\"/Users/andreea/Documents/iosifmihai/clients/Medident /welcome-series/email-1/strategy-and-copy.md\\\" | head; echo done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-10T16:59:21.972Z",
+      "lastAccessed": "2026-10-10T16:59:21.972Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-09T16:59:21.972Z"
+    },
+    "cmd-1791734925713": {
+      "key": "cmd-1791734925713",
+      "value": "{\"command\":\"ls /Users/andreea/Documents/iosifmihai/.claude/agents ~/.claude/agents 2>/dev/null | head -100\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:08:45.713Z",
+      "lastAccessed": "2026-10-11T16:08:45.713Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:08:45.713Z"
+    },
+    "cmd-1791735255449": {
+      "key": "cmd-1791735255449",
+      "value": "{\"command\":\"ls clients/ && find clients/lucasbites -maxdepth 3 | head -100 && ls -la clients/lucasbites\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:14:15.449Z",
+      "lastAccessed": "2026-10-11T16:14:15.449Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:14:15.449Z"
+    },
+    "cmd-1791735485111": {
+      "key": "cmd-1791735485111",
+      "value": "{\"command\":\"cd /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/f8926306-2188-46bf-a2d6-5c8f4549d8cb/scratchpad && curl -sL https://lucasbites.ro/ -o home.html; curl -sL \\\"https://lucasbites.ro/product-sitemap.xml\\\" | grep -o '<loc>[^<]*' | sed 's/<loc>//' | head -60\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:18:05.111Z",
+      "lastAccessed": "2026-10-11T16:18:05.111Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:18:05.111Z"
+    },
+    "cmd-1791735529585": {
+      "key": "cmd-1791735529585",
+      "value": "{\"command\":\"cd /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/f8926306-2188-46bf-a2d6-5c8f4549d8cb/scratchpad && for p in clasic-pankees-290g lava-cake-400g brownie-mix-450g-2 pizza-crust-mix-500g buttermilk-pankees-290g; do curl -sL \\\"https://www.lucasbites.ro/produs/$p/\\\" -o $p.html; echo \\\"$p $(wc -c < $p.html) reviews: $(grep -c 'woocommerce-review__author\\\\|cr-review\\\\|review__author' $p.html)\\\"; grep -o 'Recenzii ([0-9]*)\\\\|[0-9]* recenzi[ei]\\\\|rating-count[^<]*<[^<]*' $p.html | head -3; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:18:49.585Z",
+      "lastAccessed": "2026-10-11T16:18:49.585Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:18:49.585Z"
+    },
+    "cmd-1791735567115": {
+      "key": "cmd-1791735567115",
+      "value": "{\"command\":\"cd /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/f8926306-2188-46bf-a2d6-5c8f4549d8cb/scratchpad && cat > /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/f8926306-2188-46bf-a2d6-5c8f4549d8cb/scratchpad/rev.py <<'EOF'\\nimport re,sys,html\\nfor f in sys.argv[1:]:\\n    s=open(f,encoding='utf-8',errors='ignore').read()\\n    m=re.search(r'Evaluat cu <strong class=\\\"rating\\\">([\\\\d.,]+)',s)\\n    print(\\\"=====\\\",f, \\\"avg:\\\", m.group(1) if m else \\\"?\\\")\\n    for li in re.findall(r'<li[^>]*class=\\\"[^\\\"]*review[^\\\"]*\\\"[^>]*>(.*?)</li>',s,re.S)[:12]:\\n        a=re.search(r'review__author[^>]*>(.*?)<',li,re.S)\\n        r=re.search(r'Evaluat cu <strong class=\\\"rating\\\">(\\\\d)',li) or re.search(r'aria-label=\\\"[^\\\"]*?(\\\\d)[^\\\"]*\\\"',li)\\n        d=re.search(r'<time[^>]*>(.*?)<',li)\\n        t=re.search(r'class=\\\"description\\\">(.*?)</div>',li,re.S)\\n        txt=html.unescape(re.sub(r'<[^>]+>',' ',t.group(1))).strip() if t else ''\\n        print('-', a and html.unescape(a.group(1).strip()), '|', r and r.group(1), '|', d and d.group(1), '|', re.sub(r'\\\\s+',' ',txt)[:300])\\nEOF\\npython3 -I rev.py *.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:19:27.115Z",
+      "lastAccessed": "2026-10-11T16:19:27.115Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:19:27.115Z"
+    },
+    "cmd-1791735602049": {
+      "key": "cmd-1791735602049",
+      "value": "{\"command\":\"cd /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/f8926306-2188-46bf-a2d6-5c8f4549d8cb/scratchpad && for f in clasic* butter* lava* brownie* pizza*; do echo \\\"$f: $(grep -o '\\\"ratingValue\\\":\\\"\\\\?[0-9.]*\\\\|\\\"reviewCount\\\":\\\"\\\\?[0-9]*' $f | head -2 | tr '\\\\n' ' ') $(grep -o 'Bestseller\\\\|bestseller' $f | head -1)\\\"; done; grep -io 'best[ -]\\\\?seller[^<]\\\\{0,80\\\\}' home.html | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-11T16:20:02.049Z",
+      "lastAccessed": "2026-10-11T16:20:02.049Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-10T16:20:02.049Z"
+    }
+  },
+  "version": "3.0.0"
+}
