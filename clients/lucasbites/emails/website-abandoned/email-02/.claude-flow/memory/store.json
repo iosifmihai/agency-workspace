@@ -1,0 +1,131 @@
+{
+  "entries": {
+    "cmd-1791899882747": {
+      "key": "cmd-1791899882747",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-02 && cat >> strategy.md <<'EOF'\\n\\n---\\n\\n## Decizie Andreea (13.10.2026): rețete\\nSecțiunea de rețete rulează tot anul cu **2 rețete: Cookies cu ciocolată neagră (Cookie Mix Dark Chocolate) + Clătite pentru toată familia** (cu imagine nouă, diferită de New Customer 1). **Gingerbread Pancakes** rămâne doar ca variantă de sezon (1 nov - 31 dec), de schimbat manual de Andreea; nu intră în build-ul de bază.\\nEOF\\ntail -3 strategy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:58:02.747Z",
+      "lastAccessed": "2026-10-13T13:58:02.747Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:58:02.747Z"
+    },
+    "cmd-1791899964587": {
+      "key": "cmd-1791899964587",
+      "value": "{\"command\":\"grep -n -i \\\"cookie\\\" ../../../discovery.md | head -8; cat >> strategy.md <<'EOF'\\n\\n## Răspunsuri Andreea (13.10.2026)\\n1. Ce conține Gingerbread Pancakes: **nu se știe**. Varianta de sezon rămâne generică (fără ingrediente/arome nespecificate în discovery) și marcată [DE CONFIRMAT CU CLIENTUL].\\n2. Numele exact al Cookie Mix-ului: **nu se știe**. Folosim denumirea din discovery / lista REȚETE, marcată [DE CONFIRMAT CU CLIENTUL].\\n3. Preț și rating în blocul de recomandări: **da** (se setează în feed-ul theMarketer).\\n4. Top 3 bestselleri pentru fallback: **nu se știe**. Fallback-ul se setează în theMarketer după datele de vânzări; rămâne întrebare pentru client.\\nEOF\\necho ok\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:59:24.587Z",
+      "lastAccessed": "2026-10-13T13:59:24.587Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:59:24.587Z"
+    },
+    "cmd-1791900251648": {
+      "key": "cmd-1791900251648",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned; ls -la . email-01 email-02 2>&1; wc -c email-02/* email-01/build.py ../browse-abandonment/email-01/build.py; cat email-02/copy.md email-02/strategy.md 2>/dev/null | head -300\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:04:11.648Z",
+      "lastAccessed": "2026-10-13T14:04:11.648Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:04:11.648Z"
+    },
+    "cmd-1791900284278": {
+      "key": "cmd-1791900284278",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned; cat README.md email-02/brief.md email-02/copy.md; ls email-02/assets email-01/assets email-01/images\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:04:44.278Z",
+      "lastAccessed": "2026-10-13T14:04:44.278Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:04:44.278Z"
+    },
+    "cmd-1791900317876": {
+      "key": "cmd-1791900317876",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned; ls email-02; grep -n -i \\\"utm\\\\|S2\\\\|imagin\\\\|layout\\\\|culoare\\\\|fundal\\\" email-02/strategy.md | head -60; cat email-01/design-direction.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:05:17.876Z",
+      "lastAccessed": "2026-10-13T14:05:17.876Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:05:17.876Z"
+    },
+    "cmd-1791900357682": {
+      "key": "cmd-1791900357682",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; ls */image-prompts.md */*/image-prompts.md; grep -il \\\"clătit\\\\|crepe\\\\|crêpe\\\" */image-prompts.md */*/image-prompts.md; grep -i -n \\\"cookie\\\\|fursec\\\\|clătite\\\\|crêpe\\\\|crepe\\\" */image-prompts.md */*/image-prompts.md | cut -c1-260; grep -n -i \\\"imagine\\\\|cookies\\\\|clătite\\\" website-abandoned/email-02/strategy.md | sed -n '1,40p' | cut -c1-400\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:05:57.682Z",
+      "lastAccessed": "2026-10-13T14:05:57.682Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:05:57.682Z"
+    },
+    "cmd-1791900411669": {
+      "key": "cmd-1791900411669",
+      "value": "{\"command\":\"ls refs images assets; python3 -m venv .venv && .venv/bin/pip install -q Pillow 2>&1 | tail -1; sed -n 1,40p ../../tools/figma_export.py | grep -n \\\"def export\\\" ; ls ../email-01/assets/fonts\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:06:51.669Z",
+      "lastAccessed": "2026-10-13T14:06:51.669Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:06:51.669Z"
+    },
+    "cmd-1791900449120": {
+      "key": "cmd-1791900449120",
+      "value": "{\"command\":\"sed -n 144,430p ../email-01/build.py | sed '/^def build_cat_photos/,/^# ---------------------------------------------------------------- small graphics/{/^# ----/!d}' > /private/tmp/claude-501/helpers.py; sed -n 800,827p ../email-01/build.py > /private/tmp/claude-501/prev.py; grep -n \\\"^def \\\" /private/tmp/claude-501/helpers.py; ls ~/Library/Fonts /Library/Fonts 2>/dev/null | grep -i akrobat; find /Users/andreea/Documents/iosifmihai/Fonturi -iname \\\"*akrobat*bold*\\\" | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:07:29.120Z",
+      "lastAccessed": "2026-10-13T14:07:29.120Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:07:29.120Z"
+    },
+    "cmd-1791900482912": {
+      "key": "cmd-1791900482912",
+      "value": "{\"command\":\"mkdir -p /private/tmp/claude-501 && { sed -n 144,250p ../email-01/build.py; sed -n 261,280p ../email-01/build.py; sed -n 339,430p ../email-01/build.py; } > /private/tmp/claude-501/helpers.py && sed -n 800,827p ../email-01/build.py > /private/tmp/claude-501/prev.py; grep -n \\\"^def \\\" /private/tmp/claude-501/helpers.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:08:02.912Z",
+      "lastAccessed": "2026-10-13T14:08:02.912Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:08:02.912Z"
+    },
+    "cmd-1791900581202": {
+      "key": "cmd-1791900581202",
+      "value": "{\"command\":\"cd /private/tmp/claude-501 && sed -i '' 's/max-width:166px/max-width:175px/' tail.py && sed -n 529,597p /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01/build.py > tpl_head.txt && sed -n 713,752p /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01/build.py > tpl_foot.txt && head -3 tpl_foot.txt\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:09:41.202Z",
+      "lastAccessed": "2026-10-13T14:09:41.202Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:09:41.202Z"
+    },
+    "cmd-1791900665002": {
+      "key": "cmd-1791900665002",
+      "value": "{\"command\":\"cd /private/tmp/claude-501 && cat > assemble.py <<'EOF'\\nd='/private/tmp/claude-501/'\\nr=lambda f:open(d+f).read()\\nth=r('tpl_head.txt').replace('edit COPY / CATS / REVIEWS','edit COPY / RECIPES').replace(\\n\\\"    .usp{max-width:300px!important;display:block!important;margin:0 auto!important;}\\\",\\n\\\"    .usp{max-width:300px!important;display:block!important;margin:0 auto!important;}\\\\n    .pc{max-width:50%!important;}\\\\n    .bc-tx{padding:14px 16px 18px 16px!important;}\\\")\\ntail_main='''\\n\\n# ---------------------------------------------------------------- main\\ndef main():\\n    ASSETS.mkdir(exist_ok=True)\\n    IMAGES.mkdir(exist_ok=True)\\n    logo_h, stripes_h = build_logos()\\n    copy_shared()\\n    torn_divider(\\\"torn-pink-orange.png\\\", PINK, TURQ, ORANGE, 13)\\n    torn_divider(\\\"torn-orange-white.png\\\", ORANGE, PINK, WHITE, 29)\\n    torn_divider(\\\"torn-white-turq.png\\\", WHITE, ORANGE, TURQ, 43)\\n    torn_divider(\\\"torn-turq-black.png\\\", TURQ, PINK, BLACK, 59)\\n    torn_divider(\\\"torn-black-white.png\\\", BLACK, ORANGE, WHITE, 71)\\n    build_recipe_photos()\\n    build_example_product()\\n    build_mini_stars()\\n    build_usp_icons()\\n    measure_usp()\\n    build_html(logo_h, stripes_h)\\n    if \\\"--preview\\\" in sys.argv:\\n        build_previews()\\n    print(\\\"Built:\\\")\\n    for line in report:\\n        print(\\\"  \\\" + line)\\n    # self-contained copies for Figma import (images + fonts embedded)\\n    sys.path.insert(0, str(HERE.parent.parent / \\\"tools\\\"))\\n    from figma_export import export\\n    export(HERE)\\n\\n\\nif __name__ == \\\"__main__\\\":\\n    main()\\n'''\\nout=r('head.py')+r('helpers.py')+r('tail.py')+th+r('body.txt')+r('tpl_foot.txt')+r('main.py')+\\\"\\\\n# ---------------------------------------------------------------- previews (optional, headless Chrome)\\\\n\\\"+r('prev.py')+tail_main\\nopen('/Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-02/build.py','w').write(out)\\nEOF\\npython3 assemble.py && cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-02 && grep -n \\\"class=\\\\\\\"bc-tx\\\\\\\"\\\\|max-width:175\\\\|bc-tx{\\\" build.py | head; .venv/bin/python build.py --preview 2>&1 | tail -30\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:11:05.002Z",
+      "lastAccessed": "2026-10-13T14:11:05.002Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:11:05.002Z"
+    },
+    "cmd-1791900757201": {
+      "key": "cmd-1791900757201",
+      "value": "{\"command\":\".venv/bin/python build.py --sezon | grep -i \\\"html\\\\|sezon\\\"; grep -c \\\"GINGERBREAD\\\" index-esp-sezon.html; grep -c \\\"THEMARKETER\\\" index-esp.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:12:37.201Z",
+      "lastAccessed": "2026-10-13T14:12:37.201Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:12:37.201Z"
+    },
+    "cmd-1791900802111": {
+      "key": "cmd-1791900802111",
+      "value": "{\"command\":\"awk '/^## (reteta1|reteta2|sezon)/{p=1} /^## Checklist/{p=0} p' image-prompts.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T14:13:22.111Z",
+      "lastAccessed": "2026-10-13T14:13:22.111Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T14:13:22.111Z"
+    },
+    "cmd-1791905791185": {
+      "key": "cmd-1791905791185",
+      "value": "{\"command\":\"U=https://d8j0ntlcm91z4.cloudfront.net/user_3KV75djUlaE2wMI8Z7Y0cBzoFOd && curl -sSf -o images/reteta1-clatite.png $U/hf_20261013_153542_f0db7cd5-80c4-493c-8814-ab2b4a0469df.png && curl -sSf -o images/reteta2-cookies.png $U/hf_20261013_153542_8fe22e62-8278-44c6-90f1-6d4d89313b0e.png && curl -sSf -o images/sezon-gingerbread.png $U/hf_20261013_153541_4e3fb82a-8faf-477c-a432-88cb18dd6f30.png && .venv/bin/python build.py --preview 2>&1 | grep -E \\\"reteta|sezon|index|preview|figma|Error\\\"; .venv/bin/python build.py --sezon 2>&1 | grep -E \\\"sezon|Error\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T15:36:31.185Z",
+      "lastAccessed": "2026-10-13T15:36:31.185Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T15:36:31.185Z"
+    }
+  },
+  "version": "3.0.0"
+}

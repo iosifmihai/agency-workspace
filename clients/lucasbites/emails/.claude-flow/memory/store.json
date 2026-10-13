@@ -386,6 +386,717 @@
       "lastAccessed": "2026-10-11T17:04:42.423Z",
       "accessCount": 0,
       "expiresAt": "2026-11-10T17:04:42.423Z"
+    },
+    "cmd-1791825133854": {
+      "key": "cmd-1791825133854",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && cat welcome-01/brief.md; echo ----; head -40 welcome-02/brief.md; ls welcome-01/assets welcome-01/images welcome-01/refs\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:12:13.854Z",
+      "lastAccessed": "2026-10-12T17:12:13.854Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:12:13.854Z"
+    },
+    "cmd-1791825184784": {
+      "key": "cmd-1791825184784",
+      "value": "{\"command\":\"mkdir -p checkout-started/email-01/{assets,images,refs} checkout-started/email-02/{assets,images,refs} && cat > checkout-started/README.md <<'EOF'\\n# Checkout Started (coș abandonat)\\n\\n**Client:** Lucas Bites. Sursa de adevăr: `clients/lucasbites/discovery.md`.\\n**Trigger:** utilizatorul a început checkout-ul și nu a finalizat comanda.\\n**Familie vizuală:** aceeași cu welcome series (`../welcome-01/`, `../welcome-02/`, `../welcome-03/`): culori, fonturi, valuri, CTA pill. Layout propriu pentru fiecare email.\\n\\n| Email | Conținut |\\n|---|---|\\n| `email-01/` | Reamintire finalizare comandă + 3 USP |\\n| `email-02/` | Reamintire finalizare comandă + recenzii clienți (2-3) + 3 USP: suport, transport, ingrediente |\\n\\n## De confirmat cu clientul\\n- [ ] ESP (theMarketer?) și variabilele dinamice pentru produsele din coș (nume, imagine, cantitate, preț, link checkout)\\n- [ ] Timing: Email 1 la ? ore, Email 2 la ? ore după checkout started\\n- [ ] Discount în Email 2? (nu e cerut, deci nu punem)\\n- [ ] Cele 3 USP pentru Email 1 (propunere în `email-01/brief.md`)\\nEOF\\ncat > checkout-started/email-01/brief.md <<'EOF'\\n# Checkout Started, Email 1: brief\\n\\n**Client:** Lucas Bites. Reguli de brand, fonturi, culori și contact: vezi `../../welcome-01/brief.md` (secțiunile „Reguli de brand” și „Context din site”).\\n**ESP:** de confirmat. HTML email-safe (tabele, CSS inline, 600px).\\n\\n## Ce cere clientul\\n- Reamintire finalizare comandă\\n- 3 USP\\n\\n## Structură propusă\\n1. Logo\\n2. Hero: reamintire scurtă, prietenoasă („Ai lăsat ceva în coș”), fără presiune\\n3. Bloc dinamic produse din coș (imagine, nume, cantitate, preț) prin variabilele ESP: `{{CART_ITEMS}}`\\n4. CTA pill: „Finalizează comanda” -> `{{CHECKOUT_URL}}`\\n5. 3 USP (iconițe + text scurt)\\n6. CTA secundar\\n7. Footer (social, contact, dezabonare)\\n\\n## USP (propunere, de confirmat care 3)\\n- Transport gratuit de la al 2-lea produs\\n- Gata în 5 minute: adaugi apă, agiți și gătești\\n- Ingrediente pe care le recunoști, fără conservanți\\nAlternativă: peste 1.100 de recenzii, medie 4,9 din 5 (valabil 10.10.2026).\\n\\n## Reguli\\n- Fără prețuri hardcodate (vin din coș), fără discount, fără urgență falsă.\\n- Imagini: Higgsfield, doar mâncare, fără ambalaje inventate.\\nEOF\\ncat > checkout-started/email-02/brief.md <<'EOF'\\n# Checkout Started, Email 2: brief\\n\\n**Client:** Lucas Bites. Reguli de brand, fonturi, culori și contact: vezi `../../welcome-01/brief.md`.\\n**Email 1:** `../email-01/`. Email 2 rămâne în aceeași familie vizuală, cu layout propriu.\\n**ESP:** de confirmat. HTML email-safe (tabele, CSS inline, 600px).\\n\\n## Ce cere clientul\\n- Reamintire finalizare comandă\\n- Recenzii clienți (2-3)\\n- 3 USP: suport, transport, ingrediente\\n\\n## Structură propusă\\n1. Logo\\n2. Hero: a doua reamintire, alt unghi decât Email 1\\n3. Bloc dinamic produse din coș: `{{CART_ITEMS}}`\\n4. CTA pill: „Finalizează comanda” -> `{{CHECKOUT_URL}}`\\n5. Recenzii (2-3) + „Peste 1.100 de recenzii, cu o medie de 4,9 din 5”\\n6. 3 USP\\n7. CTA secundar\\n8. Footer\\n\\n## Recenzii\\nConfirmată (de pe site): „Au ieșit excelent și au fost foarte ușor de preparat. Mi-a plăcut în mod deosebit că nu au fost dulci.” (Kinga Ludescher, Classic Pankees)\\nRestul: `[DE CONFIRMAT CU CLIENTUL: încă 1-2 recenzii reale, cu nume și produs]`. NU inventăm recenzii.\\n\\n## USP\\n- **Suport:** office@lucasbites.ro · +40 731 399 399 (`[DE CONFIRMAT: program / canale suport]`)\\n- **Transport:** transport gratuit de la al 2-lea produs\\n- **Ingrediente:** ingrediente pe care le recunoști, fără conservanți; zahăr brun din trestie; făină nealbită doar la pancakes și clătite (nu generaliza)\\n\\n## Reguli\\n- Fără discount (nu e cerut), fără urgență falsă, fără promisiuni de sănătate.\\nEOF\\nfind checkout-started\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:13:04.784Z",
+      "lastAccessed": "2026-10-12T17:13:04.784Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:13:04.784Z"
+    },
+    "cmd-1791825410262": {
+      "key": "cmd-1791825410262",
+      "value": "{\"command\":\"ls -la checkout-started/email-01/refs; wc -c welcome-0*/copy.md welcome-0*/image-prompts.md welcome-0*/build.py welcome-03/design-direction.md; head -60 welcome-03/image-prompts.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:16:50.262Z",
+      "lastAccessed": "2026-10-12T17:16:50.262Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:16:50.262Z"
+    },
+    "cmd-1791825498002": {
+      "key": "cmd-1791825498002",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites; ls -la emails emails/checkout-started emails/checkout-started/* emails/welcome-01 emails/welcome-01/assets emails/welcome-03 emails/welcome-02; cat emails/checkout-started/README.md emails/checkout-started/email-01/brief.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:18:18.002Z",
+      "lastAccessed": "2026-10-12T17:18:18.002Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:18:18.002Z"
+    },
+    "cmd-1791825507188": {
+      "key": "cmd-1791825507188",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites; ls -la emails/checkout-started/email-01/ emails/; wc -c discovery.md emails/welcome-01/brief.md emails/welcome-01/copy.md emails/welcome-03/copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:18:27.188Z",
+      "lastAccessed": "2026-10-12T17:18:27.188Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:18:27.188Z"
+    },
+    "cmd-1791825533452": {
+      "key": "cmd-1791825533452",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites; wc -c discovery.md; cat emails/welcome-01/brief.md; cat emails/welcome-03/image-prompts.md; cat emails/welcome-01/image-prompts.md emails/welcome-02/image-prompts.md; ls -la emails/checkout-started/email-01/refs/* emails/welcome-03/assets emails/welcome-03/images emails/welcome-01/assets/fonts\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:18:53.452Z",
+      "lastAccessed": "2026-10-12T17:18:53.452Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:18:53.452Z"
+    },
+    "cmd-1791825545566": {
+      "key": "cmd-1791825545566",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; head -60 welcome-03/copy.md; grep -n -i \\\"transport\\\\|USP\\\\|livrare\\\\|plat\\\" welcome-03/copy.md | head -30; ls checkout-started checkout-started/email-01/refs\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:19:05.566Z",
+      "lastAccessed": "2026-10-12T17:19:05.566Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:19:05.566Z"
+    },
+    "cmd-1791825574425": {
+      "key": "cmd-1791825574425",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -rn -i \\\"preview\\\\|chrome\\\\|playwright\\\\|screenshot\\\\|wkhtml\\\" --include=*.py --include=*.md . | grep -v \\\"\\\\.claude-flow\\\" | head -30; ls /Users/andreea/Documents/iosifmihai/Logo | head; which -a google-chrome chromium; ls /Applications | grep -i -E \\\"chrome|chromium|edge|firefox\\\"; python3 -c \\\"import PIL;print(PIL.__version__)\\\"; python3 -c \\\"import playwright\\\" 2>&1 | tail -1\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:19:34.425Z",
+      "lastAccessed": "2026-10-12T17:19:34.425Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:19:34.425Z"
+    },
+    "cmd-1791825602825": {
+      "key": "cmd-1791825602825",
+      "value": "{\"command\":\"ls -la /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01/ /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-02/\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:20:02.825Z",
+      "lastAccessed": "2026-10-12T17:20:02.825Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:20:02.825Z"
+    },
+    "cmd-1791825613095": {
+      "key": "cmd-1791825613095",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -rn -i \\\"preview\\\\|headless\\\\|screenshot\\\" welcome-0*/*.py welcome-0*/*.md | head -20; ls -a welcome-0* | grep -i venv; ls -a /Users/andreea/Documents/iosifmihai | head -40; file welcome-03/preview*.png\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:20:13.095Z",
+      "lastAccessed": "2026-10-12T17:20:13.095Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:20:13.095Z"
+    },
+    "cmd-1791825642670": {
+      "key": "cmd-1791825642670",
+      "value": "{\"command\":\"for i in $(seq 1 18); do [ -f /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01/design-direction.md ] && echo found && exit 0; sleep 10; done; echo timeout\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:20:42.670Z",
+      "lastAccessed": "2026-10-12T17:20:42.670Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:20:42.670Z"
+    },
+    "cmd-1791825657402": {
+      "key": "cmd-1791825657402",
+      "value": "{\"command\":\"python3 -m venv /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv && /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/pip install -q Pillow 2>&1 | tail -2; /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python -c \\\"import PIL;print(PIL.__version__)\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:20:57.402Z",
+      "lastAccessed": "2026-10-12T17:20:57.402Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:20:57.402Z"
+    },
+    "cmd-1791825732997": {
+      "key": "cmd-1791825732997",
+      "value": "{\"command\":\"cat /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/tasks/bahrvdjrg.output; ls /Users/andreea/Documents/iosifmihai/Fonturi /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/welcome-02/assets/fonts; ls /System/Library/Fonts/Supplemental/ | grep -i -E \\\"narrow|arial\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:22:12.997Z",
+      "lastAccessed": "2026-10-12T17:22:12.997Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:22:12.997Z"
+    },
+    "cmd-1791825773522": {
+      "key": "cmd-1791825773522",
+      "value": "{\"command\":\"cd /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad && cat > measure.py <<'EOF'\\nfrom PIL import ImageFont\\nF={\\\"akb\\\":\\\"/Users/andreea/Documents/iosifmihai/Fonturi/Akrobat-Black.otf\\\",\\\"akbold\\\":\\\"/Users/andreea/Documents/iosifmihai/Fonturi/Akrobat-Bold.otf\\\",\\n\\\"narrowB\\\":\\\"/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf\\\",\\\"arialB\\\":\\\"/System/Library/Fonts/Supplemental/Arial Bold.ttf\\\",\\\"arial\\\":\\\"/System/Library/Fonts/Supplemental/Arial.ttf\\\"}\\ns=\\\"POFTA TA E ÎNCĂ ÎN COȘ ABCDEFGHIJKLMNOPRSTUVZ\\\"\\nt=\\\"Ai pus ceva bun deoparte. Îl termini în câteva click-uri, oricând vrei tu.\\\"\\nfor k,p in F.items():\\n  for sz in (52,40,22,20,16,14):\\n    f=ImageFont.truetype(p,sz)\\n    w=f.getlength(s)/len(s); w2=f.getlength(t)/len(t)\\n    print(k,sz,\\\"upper avg %.1f\\\"%w,\\\"mixed avg %.1f\\\"%w2)\\nEOF\\nvenv/bin/python measure.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:22:53.522Z",
+      "lastAccessed": "2026-10-12T17:22:53.522Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:22:53.522Z"
+    },
+    "cmd-1791825826438": {
+      "key": "cmd-1791825826438",
+      "value": "{\"command\":\"until [ -s /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/tasks/bo0wp3qyb.output ]; do sleep 5; done; cat /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/tasks/bo0wp3qyb.output\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:23:46.438Z",
+      "lastAccessed": "2026-10-12T17:23:46.438Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:23:46.438Z"
+    },
+    "cmd-1791825841040": {
+      "key": "cmd-1791825841040",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/welcome-03; grep -n \\\"<!--\\\" index.html | head -60; wc -l index.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:24:01.040Z",
+      "lastAccessed": "2026-10-12T17:24:01.040Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:24:01.040Z"
+    },
+    "cmd-1791825875282": {
+      "key": "cmd-1791825875282",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/welcome-03; sed -n 1,111p index.html; echo ------; sed -n 286,306p index.html; echo -----; sed -n 477,552p index.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:24:35.282Z",
+      "lastAccessed": "2026-10-12T17:24:35.282Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:24:35.282Z"
+    },
+    "cmd-1791825897761": {
+      "key": "cmd-1791825897761",
+      "value": "{\"command\":\"python3 -c \\\"\\nt=['Pofta ta e încă în coș','Ai uitat ceva bun în coș','Comanda ta e aproape gata',\\n'Mixurile alese sunt la un click distanță. Transport gratuit de la al 2-lea produs.',\\n'Ai ales deja ce-ți face poftă. Termini comanda de unde ai rămas.',\\n'Adaugi apă, agiți și gătești. Dar mai întâi, finalizezi comanda.',\\n'Hei, {{FIRST_NAME}}!','POFTA TA E ÎNCĂ ÎN COȘ.','POFTA TA E','ÎNCĂ ÎN COȘ.','AI UITAT CEVA BUN?',\\n'Ai ales deja ce-ți face poftă. Mai e un singur pas și mixurile pornesc spre tine.',\\n'ÎN COȘUL TĂU','Cantitate:','Total produse:','Finalizează comanda','DE CE O SĂ-ȚI PLACĂ',\\n'TRANSPORT GRATUIT','De la al 2-lea produs din coș.','GATA ÎN 5 MINUTE','Adaugi apă, agiți și gătești.','FĂRĂ CONSERVANȚI','Ingrediente pe care le recunoști.',\\n'ADAUGI APĂ','ȘI AGIȚI','GATA ÎN','5 MINUTE','FĂRĂ','CONSERVANȚI',\\n'ÎNCĂ TE GÂNDEȘTI?','Răsfoiește toată gama: pancakes, clătite, prăjituri și pizza.','Ai o întrebare? Dă reply la emailul ăsta, îți răspundem noi.','Vezi toate mixurile','eat what you love']\\nfor s in t: print(len(s),'|',s)\\n\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:24:57.761Z",
+      "lastAccessed": "2026-10-12T17:24:57.761Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:24:57.761Z"
+    },
+    "cmd-1791826052074": {
+      "key": "cmd-1791826052074",
+      "value": "{\"command\":\"cd /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad && \\\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\\\" --headless=new --disable-gpu --hide-scrollbars --window-size=375,4000 --screenshot=$PWD/t.png file://$PWD/t.html 2>&1 | tail -3; venv/bin/python -c \\\"from PIL import Image;print(Image.open('t.png').size)\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:27:32.074Z",
+      "lastAccessed": "2026-10-12T17:27:32.074Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:27:32.074Z"
+    },
+    "cmd-1791826288207": {
+      "key": "cmd-1791826288207",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:31:28.207Z",
+      "lastAccessed": "2026-10-12T17:31:28.207Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:31:28.207Z"
+    },
+    "cmd-1791826358819": {
+      "key": "cmd-1791826358819",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && python3 - <<'EOF'\\np='build.py'; s=open(p).read()\\ns=s.replace('''def e(s):\\n    return html.escape(s, quote=False)\\n''','''def e(s):\\n    return html.escape(s, quote=False)\\n\\n\\ndef nb(s):\\n    \\\"\\\"\\\"Escaped text with a non-breaking space before the last word (no one-word orphan line).\\\"\\\"\\\"\\n    t = e(s)\\n    i = t.rfind(\\\" \\\")\\n    return t if i < 0 else t[:i] + \\\"&nbsp;\\\" + t[i + 1:]\\n''')\\ns=s.replace('''<p class=\\\"tb\\\" style=\\\"margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#000000;\\\">{e(line)}</p>''','''<p class=\\\"tb\\\" style=\\\"margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#000000;\\\">{nb(line)}</p>''')\\ns=s.replace('''    common = {k: e(v) for k, v in COPY.items() if isinstance(v, str)}\\n''','''    common = {k: e(v) for k, v in COPY.items() if isinstance(v, str)}\\n    for k in (\\\"intro\\\", \\\"s5_line\\\", \\\"footer_why\\\"):\\n        common[k] = nb(COPY[k])\\n''')\\ns=s.replace('style=\\\"background-color:#FFFFFF;padding:8px 40px 0 40px;\\\">\\\\n      <!-- Greeting','style=\\\"background-color:#FFFFFF;padding:0 40px 0 40px;\\\">\\\\n      <!-- Greeting')\\nopen(p,'w').write(s)\\nEOF\\ngrep -c \\\"nb(\\\" build.py; /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview | tail -3\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:32:38.819Z",
+      "lastAccessed": "2026-10-12T17:32:38.819Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:32:38.819Z"
+    },
+    "cmd-1791826409803": {
+      "key": "cmd-1791826409803",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && sed -i '' 's/    .stack{display:block!important;width:100%!important;}/    .stack{display:block!important;width:100%!important;box-sizing:border-box!important;}/' build.py && grep -n \\\"box-sizing\\\" build.py && /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview | tail -2\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:33:29.803Z",
+      "lastAccessed": "2026-10-12T17:33:29.803Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:33:29.803Z"
+    },
+    "cmd-1791826446294": {
+      "key": "cmd-1791826446294",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python -c \\\"\\nfrom PIL import Image\\nim=Image.open('preview-mobile.png'); im.crop((0,1600,375,2000)).save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/m.png')\\nim=Image.open('assets/usp-ingrediente.png'); im.save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/w.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:34:06.294Z",
+      "lastAccessed": "2026-10-12T17:34:06.294Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:34:06.294Z"
+    },
+    "cmd-1791826497375": {
+      "key": "cmd-1791826497375",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && V=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python; $V -c \\\"\\nfrom PIL import Image, ImageDraw\\nfor n in ('img1-hero','img2-clatite'):\\n    im=Image.new('RGB',(2048,2048),'white'); d=ImageDraw.Draw(im)\\n    d.ellipse((500,600,1550,1500),fill=(190,120,40)); d.ellipse((700,300,900,500),fill=(200,30,40))\\n    im.save('images/'+n+'.png')\\n\\\" && $V build.py | grep -E \\\"hero|clatite|removed\\\" && cp assets/hero.jpg assets/s5-clatite.jpg /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/ && rm images/img1-hero.png images/img2-clatite.png && $V build.py --preview | grep -E \\\"hero|clatite|preview\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:34:57.375Z",
+      "lastAccessed": "2026-10-12T17:34:57.375Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:34:57.375Z"
+    },
+    "cmd-1791826556186": {
+      "key": "cmd-1791826556186",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && python3 - <<'EOF'\\np='build.py'; s=open(p).read()\\nrep=[('outline=BLACK + (255,), width=max(3, int(r * 0.14)) * s)','outline=BLACK + (255,), width=max(3, int(r * 0.06)))'),\\n('((250, 715), (330, 760), (420, 700))]','((200, 720), (280, 770), (370, 725))]'),\\n('layer = text_block(lines, 56, align, ang)','layer = text_block(lines, 50, align, ang)'),\\n('    box = (560, 640)\\\\n','    box = (480, 600)                         # rotated ~580 wide: clears the annotation columns\\\\n'),\\n]\\nfor a,b in rep:\\n    assert a in s,a; s=s.replace(a,b)\\nopen(p,'w').write(s)\\nEOF\\nV=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python; $V -c \\\"\\nfrom PIL import Image, ImageDraw\\nim=Image.new('RGB',(2048,2048),'white'); d=ImageDraw.Draw(im)\\nd.ellipse((500,600,1550,1500),fill=(190,120,40)); d.ellipse((700,300,900,500),fill=(200,30,40)); im.save('images/img1-hero.png')\\\" && $V build.py >/dev/null && cp assets/hero.jpg /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/hero.jpg && rm images/img1-hero.png && $V build.py --preview | grep -E \\\"hero|preview\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:35:56.186Z",
+      "lastAccessed": "2026-10-12T17:35:56.186Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:35:56.186Z"
+    },
+    "cmd-1791826601594": {
+      "key": "cmd-1791826601594",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && python3 - <<'EOF'\\np='design-direction.md'; s=open(p).read()\\nrep=[(\\\"3 adnotări Akrobat Bold 56px (afișat 28px desktop, ~17px mobil)\\\",\\\"3 adnotări Akrobat Bold 50px (afișat 25px desktop, ~16px mobil)\\\"),\\n(\\\"ESP-ul nu e confirmat, deci în `index.html` blocul e marcat între `<!-- CART_ITEMS START -->` și `<!-- CART_ITEMS END -->`. Un singur rând-model e marcat `CART_ITEM_ROW`; rândul al doilea există doar ca exemplu și se șterge la conectare.\\\",\\n \\\"ESP-ul nu e confirmat. `build.py` scrie două fișiere: `index.html` (preview, 2 rânduri marcate EXEMPLU cu preț „XX,XX lei”) și `index-esp.html` (același email, cu un singur rând `CART_ITEM_ROW` care conține variabilele). Blocul e marcat între `CART_ITEMS START` și `CART_ITEMS END`.\\\"),\\n]\\nfor a,b in rep:\\n    assert a in s,a; s=s.replace(a,b)\\ns+='''\\n## 7. Build\\n```\\npython3 -m venv .venv && .venv/bin/pip install Pillow     # o singură dată, dacă Pillow lipsește\\n.venv/bin/python build.py              # assets/ + index.html + index-esp.html\\n.venv/bin/python build.py --preview    # plus preview.png (600px) și preview-mobile.png (375px), cu Google Chrome headless\\n```\\nImaginile Higgsfield se pun în `images/` cu numele din `image-prompts.md`; fără ele, build-ul pune placeholdere la dimensiunea finală. Textele stau în `COPY` din `build.py`, copiate exact din `copy.md`.\\n'''\\nopen(p,'w').write(s)\\nEOF\\nls images assets\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:36:41.594Z",
+      "lastAccessed": "2026-10-12T17:36:41.594Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:36:41.594Z"
+    },
+    "cmd-1791826637220": {
+      "key": "cmd-1791826637220",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && grep -c \\\"—\\\" design-direction.md image-prompts.md build.py index.html index-esp.html; grep -o \\\"{{[A-Z_]*}}\\\" index-esp.html | sort -u | tr '\\\\n' ' '\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:37:17.220Z",
+      "lastAccessed": "2026-10-12T17:37:17.220Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:37:17.220Z"
+    },
+    "cmd-1791826698753": {
+      "key": "cmd-1791826698753",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && ls; sed -n '/^## img1/,/^## Checklist/p' image-prompts.md; head -12 image-prompts.md; grep -c '—' copy.md image-prompts.md design-direction.md index.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:38:18.753Z",
+      "lastAccessed": "2026-10-12T17:38:18.753Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:38:18.753Z"
+    },
+    "cmd-1791882270494": {
+      "key": "cmd-1791882270494",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && cat checkout-started/README.md && echo ---- && find checkout-started -not -name .DS_Store | head -60 && echo ---- && cat checkout-started/email-01/brief.md 2>/dev/null | head -150\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:04:30.494Z",
+      "lastAccessed": "2026-10-13T09:04:30.494Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:04:30.494Z"
+    },
+    "cmd-1791882359239": {
+      "key": "cmd-1791882359239",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && mkdir -p browse-abandonment/email-01/{refs,images,assets} && ls checkout-started/email-01/assets/fonts welcome-01/refs && grep -n -i 'rețet\\\\|reteta\\\\|recipe\\\\|ghid' ../discovery.md | head -40\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:05:59.239Z",
+      "lastAccessed": "2026-10-13T09:05:59.239Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:05:59.239Z"
+    },
+    "cmd-1791882402722": {
+      "key": "cmd-1791882402722",
+      "value": "{\"command\":\"cat > browse-abandonment/README.md <<'EOF'\\n# Browse Abandonment (produs vizualizat, fără adăugare în coș)\\n\\n**Client:** Lucas Bites. Sursa de adevăr: `clients/lucasbites/discovery.md`.\\n**Trigger:** utilizatorul a vizualizat un produs și nu l-a adăugat în coș / nu a cumpărat.\\n**ESP:** theMarketer (ca la checkout-started).\\n**Familie vizuală:** aceeași cu welcome și checkout-started (culori, fonturi, valuri, CTA pill). Layout propriu.\\n\\n| Email | Conținut |\\n|---|---|\\n| `email-01/` | Reamintire produs vizualizat (placeholder, blocul de produs îl adaugă clientul manual în theMarketer) + idei de rețete cu produsele Lucas Bites (2-3 poze / video) + 3 USP |\\n\\n## Echipa\\n- Email Marketing Strategist: strategie, timing, segment, structură, KPI\\n- Copywriter: subiecte, preheadere, texte pe secțiuni\\n- UI Designer: direcția de design, layout, `build.py`, prompturi Higgsfield\\n\\n## Status\\n- [ ] Inspirație: de adăugat de Andreea în `email-01/refs/`\\n- [ ] Strategie și structură\\n- [ ] Copy\\n- [ ] Design direction (după refs)\\n- [ ] Imagini Higgsfield: în așteptare, planul Plus intră la 14:20 (13.10.2026)\\n- [ ] Build + preview\\n\\n## De confirmat cu clientul\\n- [ ] Timing Email 1 după Product Viewed\\n- [ ] Evenimentul de vizualizare produs e trimis în theMarketer?\\n- [ ] Prioritate față de checkout-started (cine e în ambele flow-uri)\\nEOF\\ncat > browse-abandonment/email-01/brief.md <<'EOF'\\n# Browse Abandonment, Email 1: brief\\n\\n**Client:** Lucas Bites. Reguli de brand, fonturi, culori și contact: vezi `../../welcome-01/brief.md` (secțiunile „Reguli de brand” și „Context din site”).\\n**ESP:** theMarketer. HTML email-safe (tabele, CSS inline, 600px).\\n\\n## Ce cere clientul\\n- Reamintire produs vizualizat\\n- Idei de rețete cu produsele Lucas Bites (2-3 poze / video)\\n- 3 USP\\n\\n## Constrângeri\\n- **Produsul vizualizat = placeholder.** Blocul îl adaugă Andreea manual în theMarketer. În `index-esp.html` apare placeholder-ul `[PRODUS VIZUALIZAT THEMARKETER]` între comentariile `THEMARKETER_FEED`; în `index.html` (preview) un card marcat EXEMPLU.\\n- Fără prețuri hardcodate, fără discount, fără urgență falsă, fără promisiuni de sănătate, fără „cel mai bun”.\\n- Rețetele: doar rețete/produse confirmate în discovery sau pe pagina REȚETE a site-ului.\\n- Video în email = GIF animat (sau imagine cu buton play care duce la video), nu video încorporat.\\n- Imagini: Higgsfield, doar mâncare, fără ambalaje inventate. Diferite de welcome 1-3 și checkout-started 1-2.\\n- USP: diferite ca formulare sau ordine față de checkout-started Email 1, dacă e posibil, ca omul care primește ambele flow-uri să nu vadă același bloc.\\n\\n## Inspirație\\n`refs/` (le adaugă Andreea).\\nEOF\\nls -R browse-abandonment\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:06:42.722Z",
+      "lastAccessed": "2026-10-13T09:06:42.722Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:06:42.722Z"
+    },
+    "cmd-1791882453326": {
+      "key": "cmd-1791882453326",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && ls -R emails/browse-abandonment emails/checkout-started emails/welcome-01 emails/welcome-02 emails/welcome-03 2>/dev/null; ls emails; wc -c discovery.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:07:33.326Z",
+      "lastAccessed": "2026-10-13T09:07:33.326Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:07:33.326Z"
+    },
+    "cmd-1791882488584": {
+      "key": "cmd-1791882488584",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && cat emails/browse-abandonment/email-01/brief.md; echo; echo XXXXX; cat discovery.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:08:08.584Z",
+      "lastAccessed": "2026-10-13T09:08:08.584Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:08:08.584Z"
+    },
+    "cmd-1791882522806": {
+      "key": "cmd-1791882522806",
+      "value": "{\"command\":\"cat checkout-started/README.md; echo; echo XXXXX; cat checkout-started/email-01/copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:08:42.806Z",
+      "lastAccessed": "2026-10-13T09:08:42.806Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:08:42.806Z"
+    },
+    "cmd-1791882522912": {
+      "key": "cmd-1791882522912",
+      "value": "{\"command\":\"cat checkout-started/email-02/copy.md; echo XXXXX; cat checkout-started/email-01/design-direction.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:08:42.912Z",
+      "lastAccessed": "2026-10-13T09:08:42.912Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:08:42.912Z"
+    },
+    "cmd-1791882556692": {
+      "key": "cmd-1791882556692",
+      "value": "{\"command\":\"cat welcome-01/brief.md; echo XXXXX; for f in welcome-01 welcome-02 welcome-03 checkout-started/email-01 checkout-started/email-02; do echo \\\"=== $f image-prompts\\\"; grep -iE '^#|img|subiect|scen|topping|farfurie|plate|^\\\\*\\\\*' $f/image-prompts.md | head -60; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:09:16.692Z",
+      "lastAccessed": "2026-10-13T09:09:16.692Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:09:16.692Z"
+    },
+    "cmd-1791882592204": {
+      "key": "cmd-1791882592204",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && grep -rniE 'rețet|reteta|jamila|muffin|gogo|donut|waffle|churros|carrot|banana bread|vegan|de post|blueberry|chocolate chips pankees|cookie' --include=*.md . | grep -v '/discovery.md' | grep -v 'checkout-started/email-0[12]/copy.md' | cut -c1-300 | head -80\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:09:52.204Z",
+      "lastAccessed": "2026-10-13T09:09:52.204Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:09:52.204Z"
+    },
+    "cmd-1791882625550": {
+      "key": "cmd-1791882625550",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && grep -rniE 'rețet|reteta|jamila|muffin|gogo|donut|waffle|churros|carrot|banana bread|vegan|de post|blueberry|cookie' --include='*.md' . | grep -v '/discovery.md' | grep -v 'checkout-started/email-0[12]/copy.md' | grep -v image-prompts | cut -c1-280 | head -90\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:10:25.550Z",
+      "lastAccessed": "2026-10-13T09:10:25.550Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:10:25.550Z"
+    },
+    "cmd-1791882659372": {
+      "key": "cmd-1791882659372",
+      "value": "{\"command\":\"sed -n 40,75p new-customer-01/copy.md; echo ----; sed -n 160,245p new-customer-01/copy.md; echo ----; sed -n 290,400p new-customer-01/copy.md; ls new-customer-01 new-customer-02 2>/dev/null\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:10:59.372Z",
+      "lastAccessed": "2026-10-13T09:10:59.372Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:10:59.372Z"
+    },
+    "cmd-1791882696303": {
+      "key": "cmd-1791882696303",
+      "value": "{\"command\":\"for d in welcome-01 welcome-02 welcome-03; do echo \\\"== $d\\\"; ls $d $d/assets; wc -c $d/index.html $d/build.py; done; sed -n 1,80p welcome-01/index.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:11:36.303Z",
+      "lastAccessed": "2026-10-13T09:11:36.303Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:11:36.303Z"
+    },
+    "cmd-1791882696918": {
+      "key": "cmd-1791882696918",
+      "value": "{\"command\":\"grep -nE '^\\\\| img|^## img' new-customer-01/image-prompts.md new-customer-02/image-prompts.md | cut -c1-250; echo ----; grep -niE 'rețet|reteta|pizza|lava|brownie|cookie|clătit|banana|budinc|teanc' welcome-02/copy.md welcome-03/copy.md new-customer-02/copy.md | cut -c1-220 | head -60\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:11:36.918Z",
+      "lastAccessed": "2026-10-13T09:11:36.918Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:11:36.918Z"
+    },
+    "cmd-1791882731720": {
+      "key": "cmd-1791882731720",
+      "value": "{\"command\":\"sed -n 155,190p new-customer-02/copy.md; grep -nE '12 rețete|retete.html|moment|homepage' new-customer-02/copy.md | sed -n 1,40p | cut -c1-400\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:12:11.720Z",
+      "lastAccessed": "2026-10-13T09:12:11.720Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:12:11.720Z"
+    },
+    "cmd-1791882748181": {
+      "key": "cmd-1791882748181",
+      "value": "{\"command\":\"for d in welcome-01 welcome-02 welcome-03; do echo \\\"== $d\\\"; grep -o -E \\\"(src|background)=\\\\\\\"[^\\\\\\\"]+\\\\\\\"|url\\\\([^)]+\\\\)\\\" $d/index.html | sort | uniq -c; du -sh $d/assets; done; grep -n -i \\\"background-image\\\\|<video\\\\|<svg\\\" welcome-0*/index.html | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:12:28.181Z",
+      "lastAccessed": "2026-10-13T09:12:28.181Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:12:28.181Z"
+    },
+    "cmd-1791882783193": {
+      "key": "cmd-1791882783193",
+      "value": "{\"command\":\"grep -n 'ugc/' welcome-03/index.html | cut -c1-300; ls welcome-03/ugc | head; for d in welcome-01 welcome-02 welcome-03; do echo \\\"== $d\\\"; grep -n \\\"index.html\\\\|def main\\\\|__main__\\\\|preview\\\\|write_text\\\\|open(\\\" $d/build.py | head -20; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:13:03.193Z",
+      "lastAccessed": "2026-10-13T09:13:03.193Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:13:03.193Z"
+    },
+    "cmd-1791882816445": {
+      "key": "cmd-1791882816445",
+      "value": "{\"command\":\"sed -n 338,360p welcome-01/build.py; sed -n 484,515p welcome-03/build.py; sed -n 1,30p welcome-03/build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:13:36.445Z",
+      "lastAccessed": "2026-10-13T09:13:36.445Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:13:36.445Z"
+    },
+    "cmd-1791882874173": {
+      "key": "cmd-1791882874173",
+      "value": "{\"command\":\"grep -c \\\"max-width:599px\\\" welcome-0*/index.html && python3 tools/figma_export.py && grep -c \\\"assets/\\\" welcome-0*/index-figma.html; grep -o \\\"\\\\.wrap{[^}]*}\\\" welcome-01/index-figma-mobile.html | head -3\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:14:34.173Z",
+      "lastAccessed": "2026-10-13T09:14:34.173Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:14:34.173Z"
+    },
+    "cmd-1791882908274": {
+      "key": "cmd-1791882908274",
+      "value": "{\"command\":\"grep -o \\\".\\\\{60\\\\}assets/.\\\\{30\\\\}\\\" welcome-0*/index-figma.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:15:08.274Z",
+      "lastAccessed": "2026-10-13T09:15:08.274Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:15:08.274Z"
+    },
+    "cmd-1791882954049": {
+      "key": "cmd-1791882954049",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"tools/figma_export.py\\\"); s=p.read_text()\\ns=s.replace(\\\"\\\"\\\"        p = folder / ref\\n        if not p.is_file():\\\"\\\"\\\",\\\"\\\"\\\"        p = folder / ref\\n        if \\\"...\\\" in ref:  # example path inside an HTML comment\\n            return m.group(0)\\n        if not p.is_file():\\\"\\\"\\\")\\np.write_text(s)\\nEOF\\npython3 tools/figma_export.py\\nCH=\\\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\\\"; ls \\\"$CH\\\" >/dev/null && S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; for d in welcome-01 welcome-02 welcome-03; do \\\"$CH\\\" --headless=new --disable-gpu --hide-scrollbars --window-size=600,6000 --screenshot=$S/$d-figma.png \\\"file://$PWD/$d/index-figma.html\\\" 2>/dev/null; \\\"$CH\\\" --headless=new --disable-gpu --hide-scrollbars --window-size=375,9000 --screenshot=$S/$d-figma-m.png \\\"file://$PWD/$d/index-figma-mobile.html\\\" 2>/dev/null; done; ls -la $S; python3 -c \\\"\\nfrom PIL import Image\\\" 2>/dev/null && echo pil || ls */.venv 2>/dev/null | head -3\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:15:54.049Z",
+      "lastAccessed": "2026-10-13T09:15:54.049Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:15:54.049Z"
+    },
+    "cmd-1791882996347": {
+      "key": "cmd-1791882996347",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\nfor d in [\\\"welcome-01\\\",\\\"welcome-02\\\",\\\"welcome-03\\\"]:\\n    p=Path(d)/\\\"build.py\\\"; s=p.read_text()\\n    old='''    for line in report:\\n        print(\\\"  \\\" + line)\\n'''\\n    assert s.count(old)==1, d\\n    new=old+'''    # self-contained copies for Figma import (images + fonts embedded)\\n    sys.path.insert(0, str(HERE.parent / \\\"tools\\\"))\\n    from figma_export import export\\n    export(HERE)\\n'''\\n    s=s.replace(old,new)\\n    p.write_text(s)\\n    print(d, \\\"import sys\\\" in s, \\\"HERE =\\\" in s)\\nEOF\\ngit status --short welcome-0* tools\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:16:36.347Z",
+      "lastAccessed": "2026-10-13T09:16:36.347Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:16:36.347Z"
+    },
+    "cmd-1791883383964": {
+      "key": "cmd-1791883383964",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && grep -n -i \\\"cântar\\\\|cantar\\\" discovery.md emails/welcome-0*/copy.md | head; python3 - <<'EOF'\\nimport re\\ns=open(\\\"emails/browse-abandonment/email-01/copy.md\\\",encoding=\\\"utf-8\\\").read()\\nbad=0\\nfor line in s.splitlines():\\n    if not line.startswith(\\\"|\\\"): continue\\n    cells=[c.strip() for c in line.strip(\\\"|\\\").split(\\\"|\\\")]\\n    for i,c in enumerate(cells[:-1]):\\n        n=cells[i+1]\\n        if re.fullmatch(r\\\"\\\\d+\\\",n):\\n            t=re.sub(r\\\"\\\\[[^\\\\]]*\\\\]\\\",\\\"\\\",c).replace(\\\"**\\\",\\\"\\\").strip()\\n            t=re.sub(r\\\"\\\\s*→.*\\\",\\\"\\\",t).strip()\\n            if t and abs(len(t)-int(n))>0:\\n                bad+=1; print(f\\\"{len(t):>3} vs {n:>3}: {t}\\\")\\nprint(\\\"mismatches:\\\",bad)\\nEOF\\ngrep -c \\\"—\\\" emails/browse-abandonment/email-01/copy.md emails/browse-abandonment/email-01/strategy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:23:03.964Z",
+      "lastAccessed": "2026-10-13T09:23:03.964Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:23:03.964Z"
+    },
+    "cmd-1791892948626": {
+      "key": "cmd-1791892948626",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && mkdir -p website-abandoned/email-01/{refs,images,assets} website-abandoned/email-02 && cat > website-abandoned/README.md <<'EOF'\\n# Website Abandoned (vizită pe site, fără produs vizualizat / fără coș)\\n\\n**Client:** Lucas Bites. Sursa de adevăr: `clients/lucasbites/discovery.md`.\\n**Trigger:** utilizatorul a vizitat site-ul (contact identificat) fără să vizualizeze un produs, să adauge în coș sau să cumpere. [DE CONFIRMAT: evenimentul disponibil în theMarketer]\\n**ESP:** theMarketer.\\n**Familie vizuală:** aceeași cu welcome, checkout-started și browse-abandonment. Layout propriu.\\n\\n| Email | Conținut |\\n|---|---|\\n| `email-01/` | Prezentare categorii website + secțiune cu recenzii de la clienți + USP |\\n| `email-02/` | Rețete cu produsele Lucas Bites + recomandări de produse (de făcut) |\\n\\n## Echipa\\n- Email Marketing Strategist: strategie, timing, segment, structură, KPI\\n- Copywriter: subiecte, preheadere, texte pe secțiuni\\n- UI Designer: direcția de design, layout, `build.py`, prompturi Higgsfield\\n\\n## Linkuri\\nToate linkurile (categorii, magazin, recenzii, dezabonare) le pune Andreea în theMarketer. Agenții lasă doar placeholdere.\\n\\n## Status Email 1\\n- [ ] Strategie și structură\\n- [ ] Copy\\n- [ ] Design direction + prompturi\\n- [ ] Imagini Higgsfield\\n- [ ] Build + preview + versiuni Figma\\nEOF\\ncat > website-abandoned/email-01/brief.md <<'EOF'\\n# Website Abandoned, Email 1: brief\\n\\n**Client:** Lucas Bites. Reguli de brand, fonturi, culori și contact: vezi `../../welcome-01/brief.md`.\\n**ESP:** theMarketer. HTML email-safe (tabele, CSS inline, 600px).\\n\\n## Ce cere clientul\\n- Prezentare categorii website\\n- Secțiune cu recenzii de la clienți\\n- USP\\n\\n## Constrângeri\\n- Categoriile: doar cele confirmate în discovery (structura site-ului / gama). Fiecare categorie cu imagine (Higgsfield, doar mâncare, fără ambalaje inventate) și link placeholder.\\n- Recenzii: doar recenzii reale, deja folosite/aprobate (welcome-03, checkout-started email-02) sau din discovery, cu nume și produs exact ca în sursă. Fără recenzii inventate.\\n- Fără prețuri, fără discount, fără urgență falsă, fără promisiuni de sănătate, fără „cel mai bun”.\\n- Linkuri: doar placeholdere, le pune Andreea.\\n- Imagini diferite de welcome 1-3, new-customer 1-2, checkout-started 1-2, browse-abandonment 1.\\n- USP diferite ca formulare sau ordine față de checkout-started 1-2 și browse 1, dacă e posibil.\\n- Hero de altă culoare / altă tranziție decât emailurile anterioare.\\n\\n## Inspirație\\n`refs/` (opțional, le adaugă Andreea).\\nEOF\\nls -R website-abandoned\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:02:28.626Z",
+      "lastAccessed": "2026-10-13T12:02:28.626Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:02:28.626Z"
+    },
+    "cmd-1791892995969": {
+      "key": "cmd-1791892995969",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; ls -R website-abandoned browse-abandonment checkout-started | head -80; ls; wc -c ../discovery.md website-abandoned/README.md website-abandoned/email-01/brief.md browse-abandonment/email-01/*.md browse-abandonment/README.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:03:15.969Z",
+      "lastAccessed": "2026-10-13T12:03:15.969Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:03:15.969Z"
+    },
+    "cmd-1791893028642": {
+      "key": "cmd-1791893028642",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; cat website-abandoned/README.md website-abandoned/email-01/brief.md browse-abandonment/README.md; cat ../discovery.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:03:48.642Z",
+      "lastAccessed": "2026-10-13T12:03:48.642Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:03:48.642Z"
+    },
+    "cmd-1791893061967": {
+      "key": "cmd-1791893061967",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; cat browse-abandonment/email-01/brief.md; cat browse-abandonment/email-01/design-direction.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:04:21.967Z",
+      "lastAccessed": "2026-10-13T12:04:21.967Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:04:21.967Z"
+    },
+    "cmd-1791893098509": {
+      "key": "cmd-1791893098509",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; sed -n 80,200p checkout-started/email-01/copy.md | grep -n -i -E \\\"USP|S4|transport|titlu\\\" | head -30; echo \\\"=== CO2\\\"; cat checkout-started/email-02/copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:04:58.509Z",
+      "lastAccessed": "2026-10-13T12:04:58.509Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:04:58.509Z"
+    },
+    "cmd-1791893136253": {
+      "key": "cmd-1791893136253",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; sed -n 160,230p welcome-03/copy.md; sed -n 75,90p welcome-03/copy.md; grep -n -i \\\"Kinga\\\\|recenz\\\" welcome-01/copy.md welcome-01/brief.md | head; grep -rn -i \\\"Gabriela\\\\|Irina\\\" welcome-03/brief.md | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:05:36.253Z",
+      "lastAccessed": "2026-10-13T12:05:36.253Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:05:36.253Z"
+    },
+    "cmd-1791893171120": {
+      "key": "cmd-1791893171120",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; sed -n 35,65p welcome-03/brief.md; grep -n \\\"„\\\" new-customer-0*/copy.md | grep -i -E \\\"recenz|L\\\\.|\\\\.\\\\*\\\\*\\\" | head; grep -n -i \\\"recenz\\\" new-customer-0*/copy.md | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:06:11.120Z",
+      "lastAccessed": "2026-10-13T12:06:11.120Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:06:11.120Z"
+    },
+    "cmd-1791893212239": {
+      "key": "cmd-1791893212239",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -rn -i \\\"categori\\\\|Îndulcitor\\\\|Cookie Mix\\\\|Crêpes\\\" --include=*.md . | grep -v \\\"^./website-abandoned\\\" | cut -c1-300 | head -40; cat welcome-01/brief.md | sed -n 1,60p\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:06:52.239Z",
+      "lastAccessed": "2026-10-13T12:06:52.239Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:06:52.239Z"
+    },
+    "cmd-1791893245749": {
+      "key": "cmd-1791893245749",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -rn -i \\\"categori\\\" . 2>/dev/null | grep \\\"\\\\.md:\\\" | grep -v \\\"^./website-abandoned\\\" | cut -c1-260 | head -30\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:07:25.749Z",
+      "lastAccessed": "2026-10-13T12:07:25.749Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:07:25.749Z"
+    },
+    "cmd-1791893279059": {
+      "key": "cmd-1791893279059",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; cat welcome-02/brief.md; grep -n \\\"S3\\\" welcome-02/copy.md | head; \",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:07:59.059Z",
+      "lastAccessed": "2026-10-13T12:07:59.059Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:07:59.059Z"
+    },
+    "cmd-1791893313664": {
+      "key": "cmd-1791893313664",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; sed -n 117,175p welcome-02/copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:08:33.664Z",
+      "lastAccessed": "2026-10-13T12:08:33.664Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:08:33.664Z"
+    },
+    "cmd-1791893349448": {
+      "key": "cmd-1791893349448",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; for f in */image-prompts.md */email-0*/image-prompts.md; do echo \\\"=== $f\\\"; grep -n -E \\\"^#+ |Ce arată|Subject|Subiect\\\" \\\"$f\\\" | cut -c1-220 | head -20; done 2>/dev/null\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:09:09.448Z",
+      "lastAccessed": "2026-10-13T12:09:09.448Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:09:09.448Z"
+    },
+    "cmd-1791893383574": {
+      "key": "cmd-1791893383574",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; for f in welcome-0*/image-prompts.md new-customer-0*/image-prompts.md browse-abandonment/email-01/image-prompts.md checkout-started/email-0*/image-prompts.md; do echo \\\"=== $f\\\"; awk '/^\\\\| Fișier/{p=1} p&&/^\\\\|/{print} p&&!/^\\\\|/&&NR>1{if(p==1&&c++>0)exit}' \\\"$f\\\" | cut -c1-330; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:09:43.574Z",
+      "lastAccessed": "2026-10-13T12:09:43.574Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:09:43.574Z"
+    },
+    "cmd-1791893419700": {
+      "key": "cmd-1791893419700",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -n -E \\\"^\\\\| (Subiect|H1|H2|Supratitlu|Titlu|Etichet|Buton|Rând|[A-C1-3] )|^### |\\\\*\\\\*[A-ZĂÎȘȚÂ ,.?!-]{6,}\\\\*\\\\*\\\" browse-abandonment/email-01/copy.md | cut -c1-220 | head -60\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:10:19.700Z",
+      "lastAccessed": "2026-10-13T12:10:19.700Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:10:19.700Z"
+    },
+    "cmd-1791893530993": {
+      "key": "cmd-1791893530993",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; for d in new-customer-01 new-customer-02 welcome-01 welcome-02 welcome-03; do echo \\\"== $d\\\"; grep -n -i -E \\\"secvenț|hero.*(roz|portocaliu|turcoaz|negru|alb)|tranziți\\\" $d/design-direction.md 2>/dev/null | cut -c1-250 | head -6; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:12:10.993Z",
+      "lastAccessed": "2026-10-13T12:12:10.993Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:12:10.993Z"
+    },
+    "cmd-1791893601467": {
+      "key": "cmd-1791893601467",
+      "value": "{\"command\":\"python3 -c \\\"\\nfor s in ['Clătitele ies foarte pufoase și gustoase. O adevărată plăcere să le faci și să le mănânci','Am folosit amestecul pentru blat de pizza, Pizza Crust Mix, 500g și mi-au ieșit două pizza delicioase!','Bun. Rețeta este foarte bună','Sunt foarte încântată de aceste produse! Sunt minunate! Voi reveni cu comenzi!','Pufoase și delicioase!','PANCAKES & CRÊPES','Ai cafenea, restaurant sau patiserie? Aceeași rețetă, porții constante, preparare rapidă în bucătărie.']: print(len(s), s)\\n\\\"; ls /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01/\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:13:21.467Z",
+      "lastAccessed": "2026-10-13T12:13:21.467Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:13:21.467Z"
+    },
+    "cmd-1791893634915": {
+      "key": "cmd-1791893634915",
+      "value": "{\"command\":\"ls -la /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01/*/ ; grep -n -i \\\"welcome-04\\\\|Email 4\\\\|ziua\\\" /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/welcome-03/copy.md | head -5\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:13:54.915Z",
+      "lastAccessed": "2026-10-13T12:13:54.915Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:13:54.915Z"
+    },
+    "cmd-1791893851588": {
+      "key": "cmd-1791893851588",
+      "value": "{\"command\":\"grep -c \\\"—\\\" /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01/strategy.md; wc -c /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01/strategy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:17:31.588Z",
+      "lastAccessed": "2026-10-13T12:17:31.588Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:17:31.588Z"
+    },
+    "cmd-1791894236947": {
+      "key": "cmd-1791894236947",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && python3 - <<'EOF'\\nimport re\\ns=open(\\\"website-abandoned/email-01/copy.md\\\",encoding=\\\"utf-8\\\").read()\\nbad=0\\nfor line in s.splitlines():\\n    if not line.startswith(\\\"|\\\"): continue\\n    cells=[c.strip() for c in line.strip(\\\"|\\\").split(\\\"|\\\")]\\n    for i,c in enumerate(cells[:-1]):\\n        n=cells[i+1]\\n        if re.fullmatch(r\\\"\\\\d+\\\",n):\\n            t=re.sub(r\\\"\\\\[[^\\\\]]*\\\\]\\\",\\\"\\\",c).replace(\\\"**\\\",\\\"\\\").strip()\\n            t=re.sub(r\\\"\\\\s*→.*\\\",\\\"\\\",t).strip()\\n            if t and len(t)!=int(n):\\n                bad+=1; print(f\\\"{len(t):>3} vs {n:>3}: {t}\\\")\\nprint(\\\"mismatches:\\\",bad, \\\"emdash:\\\", s.count(\\\"—\\\"))\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:23:56.947Z",
+      "lastAccessed": "2026-10-13T12:23:56.947Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:23:56.947Z"
+    },
+    "cmd-1791898242154": {
+      "key": "cmd-1791898242154",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && for f in $(find . -name index.html -not -path '*/.venv/*' | sort); do d=$(dirname $f); printf \\\"%-36s figma:%s hook:%s mq:%s\\\\n\\\" $d \\\"$(ls $d/index-figma.html 2>/dev/null >/dev/null && echo y || echo n)\\\" \\\"$(grep -q figma_export $d/build.py 2>/dev/null && echo y || echo n)\\\" \\\"$(grep -c 'max-width:599px' $f)\\\"; done; grep -n \\\"for line in report\\\" new-customer-0*/build.py checkout-started/email-0*/build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:30:42.154Z",
+      "lastAccessed": "2026-10-13T13:30:42.154Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:30:42.154Z"
+    },
+    "cmd-1791898276692": {
+      "key": "cmd-1791898276692",
+      "value": "{\"command\":\"for f in new-customer-01/build.py new-customer-02/build.py checkout-started/email-01/build.py checkout-started/email-02/build.py; do echo \\\"== $f\\\"; grep -n \\\"^HERE\\\\|^import sys\\\\|^import.*sys\\\" $f | head -3; n=$(grep -n \\\"for line in report\\\" $f | cut -d: -f1); sed -n \\\"$((n-1)),$((n+8))p\\\" $f; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:31:16.692Z",
+      "lastAccessed": "2026-10-13T13:31:16.692Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:31:16.692Z"
+    },
+    "cmd-1791898313320": {
+      "key": "cmd-1791898313320",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\nfor f,up in [(\\\"new-customer-01/build.py\\\",\\\"HERE.parent\\\"),(\\\"new-customer-02/build.py\\\",\\\"HERE.parent\\\"),(\\\"checkout-started/email-01/build.py\\\",\\\"HERE.parent.parent\\\"),(\\\"checkout-started/email-02/build.py\\\",\\\"HERE.parent.parent\\\")]:\\n    p=Path(f); s=p.read_text()\\n    old='''    for line in report:\\n        print(\\\"  \\\" + line)\\n\\n\\nif __name__ == \\\"__main__\\\":'''\\n    assert s.count(old)==1,f\\n    new=f'''    for line in report:\\n        print(\\\"  \\\" + line)\\n    # self-contained copies for Figma import (images + fonts embedded)\\n    sys.path.insert(0, str({up} / \\\"tools\\\"))\\n    from figma_export import export\\n    export(HERE)\\n\\n\\nif __name__ == \\\"__main__\\\":'''\\n    p.write_text(s.replace(old,new)); print(\\\"hooked\\\",f)\\nEOF\\npython3 tools/figma_export.py new-customer-01 new-customer-02 checkout-started/email-01 checkout-started/email-02\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:31:53.320Z",
+      "lastAccessed": "2026-10-13T13:31:53.320Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:31:53.320Z"
+    },
+    "cmd-1791898360107": {
+      "key": "cmd-1791898360107",
+      "value": "{\"command\":\"python3 tools/figma_export.py welcome-01 welcome-02 welcome-03 browse-abandonment/email-01 website-abandoned/email-01 && for f in $(find . -name 'index-figma*.html' -not -path '*/.venv/*' | sort); do n=$(grep -o -E '(src|background)=\\\"(assets|images|ugc)/[^\\\"]+\\\"|url\\\\((assets|images)/[^)]*\\\\)|url\\\\(\\\"?(assets|images)' $f | wc -l | tr -d ' '); echo \\\"$f leftover:$n\\\"; done; CH=\\\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\\\"; S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; for d in new-customer-01 new-customer-02 checkout-started/email-01 checkout-started/email-02; do t=$(echo $d | tr / -); \\\"$CH\\\" --headless=new --disable-gpu --hide-scrollbars --window-size=600,6000 --screenshot=$S/f-$t.png \\\"file://$PWD/$d/index-figma.html\\\" 2>/dev/null; \\\"$CH\\\" --headless=new --disable-gpu --hide-scrollbars --window-size=375,9000 --screenshot=$S/fm-$t.png \\\"file://$PWD/$d/index-figma-mobile.html\\\" 2>/dev/null; done; ls $S | grep -E \\\"^fm?-\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:32:40.107Z",
+      "lastAccessed": "2026-10-13T13:32:40.107Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:32:40.107Z"
+    },
+    "cmd-1791898398853": {
+      "key": "cmd-1791898398853",
+      "value": "{\"command\":\"S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && browse-abandonment/email-01/.venv/bin/python - <<EOF\\nfrom PIL import Image, ImageChops\\nS=\\\"$S\\\"\\npairs=[(\\\"new-customer-01\\\",\\\"new-customer-01\\\"),(\\\"new-customer-02\\\",\\\"new-customer-02\\\"),(\\\"checkout-started/email-01\\\",\\\"checkout-started-email-01\\\"),(\\\"checkout-started/email-02\\\",\\\"checkout-started-email-02\\\")]\\ntiles=[]\\nfor d,t in pairs:\\n    for pv,fg in [(\\\"preview.png\\\",f\\\"f-{t}.png\\\"),(\\\"preview-mobile.png\\\",f\\\"fm-{t}.png\\\")]:\\n        a=Image.open(f\\\"{d}/{pv}\\\").convert(\\\"RGB\\\"); b=Image.open(f\\\"{S}/{fg}\\\").convert(\\\"RGB\\\")\\n        b=b.crop((0,0,a.width,a.height))\\n        diff=ImageChops.difference(a,b).getbbox()\\n        px=sum(1 for p in ImageChops.difference(a,b).convert(\\\"L\\\").getdata() if p>40)\\n        print(f\\\"{d:28} {pv:20} size {a.size} diff-bbox {diff} pixels>40: {px}\\\")\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:33:18.853Z",
+      "lastAccessed": "2026-10-13T13:33:18.853Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:33:18.853Z"
+    },
+    "cmd-1791898438550": {
+      "key": "cmd-1791898438550",
+      "value": "{\"command\":\"S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && ls -la --time-style=+%H:%M new-customer-01/preview.png new-customer-01/index.html new-customer-02/preview.png new-customer-02/index.html 2>/dev/null || stat -f \\\"%Sm %N\\\" new-customer-0*/preview.png new-customer-0*/index.html; browse-abandonment/email-01/.venv/bin/python - <<EOF\\nfrom PIL import Image\\nS=\\\"$S\\\"\\na=Image.open(\\\"new-customer-02/preview.png\\\").convert(\\\"RGB\\\").crop((0,330,600,480))\\nb=Image.open(f\\\"{S}/f-new-customer-02.png\\\").convert(\\\"RGB\\\").crop((0,330,600,480))\\nc=Image.new(\\\"RGB\\\",(600,310),\\\"red\\\"); c.paste(a,(0,0)); c.paste(b,(0,160)); c.save(f\\\"{S}/nc2-diff.png\\\")\\na=Image.open(\\\"new-customer-01/preview.png\\\").convert(\\\"RGB\\\").crop((0,0,600,2000)).resize((300,1000))\\nb=Image.open(f\\\"{S}/f-new-customer-01.png\\\").convert(\\\"RGB\\\").crop((0,0,600,2000)).resize((300,1000))\\nc=Image.new(\\\"RGB\\\",(610,1000),\\\"red\\\"); c.paste(a,(0,0)); c.paste(b,(310,0)); c.save(f\\\"{S}/nc1-diff.png\\\")\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:33:58.550Z",
+      "lastAccessed": "2026-10-13T13:33:58.550Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:33:58.550Z"
+    },
+    "cmd-1791898481450": {
+      "key": "cmd-1791898481450",
+      "value": "{\"command\":\"grep -rl \\\"Salut, Andreea\\\\|IMAGINE DIN FEED\\\\|IMAGINE<br\\\" --include=*.py --include=*.html --include=*.md . 2>/dev/null | grep -v .venv | head; ls new-customer-01 new-customer-02\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:34:41.450Z",
+      "lastAccessed": "2026-10-13T13:34:41.450Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:34:41.450Z"
+    },
+    "cmd-1791898515294": {
+      "key": "cmd-1791898515294",
+      "value": "{\"command\":\"grep -rn \\\"Salut, Andreea\\\\|DIN FEED\\\" new-customer-01 new-customer-02 2>/dev/null | grep -v \\\"\\\\.png\\\" | cut -c1-200 | head; grep -n \\\"{{\\\" new-customer-01/index.html | cut -c1-220 | head -20\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:35:15.294Z",
+      "lastAccessed": "2026-10-13T13:35:15.294Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:35:15.294Z"
+    },
+    "cmd-1791898566175": {
+      "key": "cmd-1791898566175",
+      "value": "{\"command\":\"python3 tools/figma_export.py welcome-01 welcome-02 welcome-03 new-customer-01 new-customer-02 checkout-started/email-01 checkout-started/email-02 browse-abandonment/email-01 website-abandoned/email-01 2>&1 | grep -v \\\"^  !.*ugc\\\" ; grep -c \\\"IMAGINE DIN FEED\\\\|data:image/svg\\\" new-customer-0*/index-figma.html checkout-started/email-0*/index-figma.html; ls checkout-started/email-02/images; grep -n \\\"^| img\\\\|^## img\\\\|^| \\\\`img\\\\|Fișier\\\" checkout-started/email-02/image-prompts.md | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:36:06.175Z",
+      "lastAccessed": "2026-10-13T13:36:06.175Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:36:06.175Z"
+    },
+    "cmd-1791898734523": {
+      "key": "cmd-1791898734523",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && CH=\\\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\\\"; S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; \\\"$CH\\\" --headless=new --disable-gpu --hide-scrollbars --window-size=600,1500 --screenshot=$S/nc1f.png \\\"file://$PWD/new-customer-01/index-figma.html\\\" 2>/dev/null; browse-abandonment/email-01/.venv/bin/python -c \\\"\\nfrom PIL import Image; Image.open('$S/nc1f.png').crop((0,850,600,1250)).save('$S/nc1f-crop.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:38:54.523Z",
+      "lastAccessed": "2026-10-13T13:38:54.523Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:38:54.523Z"
     }
   },
   "version": "3.0.0"

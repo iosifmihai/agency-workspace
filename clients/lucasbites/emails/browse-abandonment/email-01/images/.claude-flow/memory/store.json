@@ -1,0 +1,14 @@
+{
+  "entries": {
+    "cmd-1791892045079": {
+      "key": "cmd-1791892045079",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment/email-01/images && U=https://d8j0ntlcm91z4.cloudfront.net/user_3KV75djUlaE2wMI8Z7Y0cBzoFOd; curl -sSf -o rec1-pankees.png $U/hf_20261013_114642_d3e23294-2741-4fd1-a453-ef88bb04c98a.png && curl -sSf -o rec2-pizza.png $U/hf_20261013_114643_1aa6ba49-2edf-4f23-99ed-6a914421c2bf.png && curl -sSf -o rec3-brownie.png $U/hf_20261013_114642_20f11af1-04b7-45a6-bfa7-e287592de32b.png && curl -sSf -o s5-clatite.png $U/hf_20261013_114643_5da9fb97-c15e-462f-8ddd-bde447da324f.png && file *.png && S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; for f in *.png; do sips -Z 700 $f --out $S/sm-$f >/dev/null; done; ls $S\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:47:25.079Z",
+      "lastAccessed": "2026-10-13T11:47:25.079Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:47:25.079Z"
+    }
+  },
+  "version": "3.0.0"
+}

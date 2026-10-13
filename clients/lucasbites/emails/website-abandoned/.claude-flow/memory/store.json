@@ -1,0 +1,104 @@
+{
+  "entries": {
+    "cmd-1791896562280": {
+      "key": "cmd-1791896562280",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned && python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"README.md\\\"); s=p.read_text()\\ns=s.replace(\\\"- [ ] Strategie și structură\\\",\\\"- [x] Strategie și structură (`email-01/strategy.md`)\\\")\\ns=s.replace(\\\"- [ ] Copy\\\",\\\"- [x] Copy (`email-01/copy.md`), răspunsuri client 13.10.2026 integrate\\\")\\ns=s.replace(\\\"- [ ] Design direction + prompturi\\\",\\\"- [x] Design direction + prompturi\\\")\\ns=s.replace(\\\"- [ ] Imagini Higgsfield\\\",\\\"- [x] Imagini Higgsfield (5 categorii, gpt_image_2_5 high 2K, 13.10.2026)\\\")\\ns=s.replace(\\\"- [ ] Build + preview + versiuni Figma\\\",\\\"- [x] Build + preview + versiuni Figma\\\")\\np.write_text(s)\\nEOF\\ngrep -n \\\"\\\\[x\\\\]\\\" README.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:02:42.280Z",
+      "lastAccessed": "2026-10-13T13:02:42.280Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:02:42.280Z"
+    },
+    "cmd-1791899127413": {
+      "key": "cmd-1791899127413",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned && grep -n -i -A25 \\\"email 2\\\" email-01/strategy.md | head -60\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:45:27.413Z",
+      "lastAccessed": "2026-10-13T13:45:27.413Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:45:27.413Z"
+    },
+    "cmd-1791899167301": {
+      "key": "cmd-1791899167301",
+      "value": "{\"command\":\"mkdir -p email-02/{refs,images,assets} && cat > email-02/brief.md <<'EOF'\\n# Website Abandoned, Email 2: brief\\n\\n**Client:** Lucas Bites. Reguli de brand, fonturi, culori și contact: vezi `../../welcome-01/brief.md`.\\n**ESP:** theMarketer. HTML email-safe (tabele, CSS inline, 600px).\\n**Context flow:** vezi `../email-01/strategy.md` (timing Email 2: 72 h după Email 1, segment, exit, priorități) și `../email-01/copy.md`.\\n\\n## Ce cere clientul\\n- Rețete cu produsele Lucas Bites\\n- Recomandare de produse care s-ar putea să-ți placă și pe care merită să le încerci\\n\\n## Constrângeri\\n- **Recomandările de produse = placeholder.** Blocul îl adaugă Andreea manual în theMarketer (feed de recomandări). În `index-esp.html`: `[RECOMANDĂRI PRODUSE THEMARKETER]` între comentariile `THEMARKETER_FEED START/END`; în `index.html` (preview): 3 carduri marcate EXEMPLU. Textul din jur nu numește produse, prețuri sau categorii.\\n- Rețete: doar rețete/produse confirmate în discovery, pe pagina REȚETE sau deja folosite cu acord. Diferite de rețetele din welcome 1-3, new-customer 1-2, checkout 1-2, browse 1 și de categoriile/imaginile din website Email 1.\\n- Linkuri: doar placeholdere, le pune Andreea.\\n- Fără prețuri, fără discount, fără urgență falsă, fără promisiuni de sănătate, fără „cel mai bun”.\\n- Imagini: Higgsfield, doar mâncare, fără ambalaje inventate, fără oameni/mâini.\\n- Layout diferit de website Email 1, dar recunoscut ca parte din același flow (Email 1 și 2 merg împreună).\\n- USP / titluri de coloane pe un singur rând, aliniate.\\nEOF\\npython3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"README.md\\\"); s=p.read_text()\\ns=s.rstrip()+\\\"\\\"\\\"\\n\\n## Status Email 2\\n- [ ] Strategie și structură\\n- [ ] Copy\\n- [ ] Design direction + prompturi\\n- [ ] Imagini Higgsfield\\n- [ ] Build + preview + versiuni Figma\\n\\\"\\\"\\\"\\np.write_text(s)\\nEOF\\nls email-02\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:46:07.301Z",
+      "lastAccessed": "2026-10-13T13:46:07.301Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:46:07.301Z"
+    },
+    "cmd-1791899214305": {
+      "key": "cmd-1791899214305",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; ls -R website-abandoned browse-abandonment checkout-started | head -80; wc -c website-abandoned/email-02/brief.md website-abandoned/README.md website-abandoned/email-01/*.md ../discovery.md browse-abandonment/email-01/*.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:46:54.305Z",
+      "lastAccessed": "2026-10-13T13:46:54.305Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:46:54.305Z"
+    },
+    "cmd-1791899247362": {
+      "key": "cmd-1791899247362",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; cat website-abandoned/email-02/brief.md website-abandoned/README.md; cat ../discovery.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:47:27.362Z",
+      "lastAccessed": "2026-10-13T13:47:27.362Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:47:27.362Z"
+    },
+    "cmd-1791899280337": {
+      "key": "cmd-1791899280337",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; cat website-abandoned/email-01/copy.md; ls; ls */ | head -50\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:48:00.337Z",
+      "lastAccessed": "2026-10-13T13:48:00.337Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:48:00.337Z"
+    },
+    "cmd-1791899317253": {
+      "key": "cmd-1791899317253",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -n -i -E \\\"rețet|retet|min ·|· [0-9]+ min\\\" new-customer-01/copy.md new-customer-02/copy.md new-customer-01/brief.md new-customer-02/brief.md | head -80\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:48:37.253Z",
+      "lastAccessed": "2026-10-13T13:48:37.253Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:48:37.253Z"
+    },
+    "cmd-1791899351521": {
+      "key": "cmd-1791899351521",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; sed -n 20,40p new-customer-02/brief.md; for f in welcome-0{1,2,3} new-customer-0{1,2} checkout-started/email-0{1,2} browse-abandonment/email-01 website-abandoned/email-01; do echo \\\"=== $f\\\"; grep -n -i -E \\\"^#|subiect|subject|IMG|rețet|recomand\\\" $f/image-prompts.md | head -30; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:49:11.521Z",
+      "lastAccessed": "2026-10-13T13:49:11.521Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:49:11.521Z"
+    },
+    "cmd-1791899418058": {
+      "key": "cmd-1791899418058",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -n -i -E \\\"cookie|gingerbread|muffin|gogo|donut\\\" welcome-01/brief.md welcome-02/brief.md ../discovery.md new-customer-01/copy.md checkout-started/email-02/copy.md | head -30; grep -n -i -E \\\"recomand|recommend|feed|altele care\\\" new-customer-01/copy.md | head -20; sed -n 1,60p website-abandoned/email-01/design-direction.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:50:18.058Z",
+      "lastAccessed": "2026-10-13T13:50:18.058Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:50:18.058Z"
+    },
+    "cmd-1791899643203": {
+      "key": "cmd-1791899643203",
+      "value": "{\"command\":\"grep -c \\\"—\\\\|–\\\" /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-02/strategy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:54:03.203Z",
+      "lastAccessed": "2026-10-13T13:54:03.203Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:54:03.203Z"
+    },
+    "cmd-1791905827373": {
+      "key": "cmd-1791905827373",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned && python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"README.md\\\"); s=p.read_text()\\ni=s.index(\\\"## Status Email 2\\\"); t=s[i:].replace(\\\"- [ ]\\\",\\\"- [x]\\\")\\np.write_text(s[:i]+t)\\nEOF\\ntail -6 README.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T15:37:07.373Z",
+      "lastAccessed": "2026-10-13T15:37:07.373Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T15:37:07.373Z"
+    }
+  },
+  "version": "3.0.0"
+}

@@ -827,6 +827,10 @@ def main():
     print("Built assets:")
     for line in report:
         print("  " + line)
+    # self-contained copies for Figma import (images + fonts embedded)
+    sys.path.insert(0, str(HERE.parent / "tools"))
+    from figma_export import export
+    export(HERE)
 
 
 if __name__ == "__main__":

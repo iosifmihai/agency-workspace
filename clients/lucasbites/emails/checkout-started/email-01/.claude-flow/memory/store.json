@@ -1,0 +1,167 @@
+{
+  "entries": {
+    "cmd-1791826901335": {
+      "key": "cmd-1791826901335",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && grep -n -i 'repede\\\\|5 minute\\\\|adaugi\\\\|1 or\\\\|24 de ore\\\\|timing\\\\|CUI\\\\|juridic\\\\|CART\\\\|ITEM_\\\\|DE CONFIRMAT\\\\|acord' copy.md build.py design-direction.md ../README.md | head -80\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:41:41.335Z",
+      "lastAccessed": "2026-10-12T17:41:41.335Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:41:41.335Z"
+    },
+    "cmd-1791826945249": {
+      "key": "cmd-1791826945249",
+      "value": "{\"command\":\"sed -n 15,30p build.py; sed -n 75,100p build.py; sed -n 600,620p build.py; sed -n 712,745p build.py; sed -n 845,875p build.py; grep -n 'CUI\\\\|Roșu\\\\|footer_' build.py | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:42:25.249Z",
+      "lastAccessed": "2026-10-12T17:42:25.249Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:42:25.249Z"
+    },
+    "cmd-1791827007601": {
+      "key": "cmd-1791827007601",
+      "value": "{\"command\":\"V=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv; [ -x $V/bin/python ] || (python3 -m venv $V && $V/bin/pip -q install Pillow); $V/bin/python build.py --preview 2>&1 | tail -8; grep -c 'FEED PRODUSE THEMARKETER' index-esp.html index.html; grep -c 'CART_TOTAL_ROW' index-esp.html index.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:43:27.601Z",
+      "lastAccessed": "2026-10-12T17:43:27.601Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:43:27.601Z"
+    },
+    "cmd-1791827047841": {
+      "key": "cmd-1791827047841",
+      "value": "{\"command\":\"grep -n '\\\"5\\\"\\\\|timp\\\\|stopwatch\\\\|def icon' build.py | head -20\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:44:07.841Z",
+      "lastAccessed": "2026-10-12T17:44:07.841Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:44:07.841Z"
+    },
+    "cmd-1791827082788": {
+      "key": "cmd-1791827082788",
+      "value": "{\"command\":\"sed -n 478,496p build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:44:42.788Z",
+      "lastAccessed": "2026-10-12T17:44:42.788Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:44:42.788Z"
+    },
+    "cmd-1791827125702": {
+      "key": "cmd-1791827125702",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np = Path(\\\"build.py\\\"); s = p.read_text()\\nold = '''    # timer with 5\\n    img, d = base()\\n    d.ellipse((34 * u, 38 * u, 94 * u, 98 * u), outline=BLACK, width=lw)\\n    d.rounded_rectangle((56 * u, 24 * u, 72 * u, 32 * u), radius=3 * u, fill=BLACK)\\n    d.line([(64 * u, 32 * u), (64 * u, 38 * u)], fill=BLACK, width=lw)\\n    f = font(int(36 * u))\\n    tw = d.textlength(\\\"5\\\", font=f)\\n    bb = d.textbbox((0, 0), \\\"5\\\", font=f)\\n    d.text((64 * u - tw / 2, 68 * u - (bb[3] + bb[1]) / 2), \\\"5\\\", font=f, fill=BLACK)\\n'''\\nnew = '''    # timer with hands (no number: USP is \\\"Repede și simplu\\\", not a fixed time)\\n    img, d = base()\\n    d.ellipse((34 * u, 38 * u, 94 * u, 98 * u), outline=BLACK, width=lw)\\n    d.rounded_rectangle((56 * u, 24 * u, 72 * u, 32 * u), radius=3 * u, fill=BLACK)\\n    d.line([(64 * u, 32 * u), (64 * u, 38 * u)], fill=BLACK, width=lw)\\n    d.line([(64 * u, 68 * u), (64 * u, 50 * u)], fill=BLACK, width=lw)\\n    d.line([(64 * u, 68 * u), (77 * u, 75 * u)], fill=BLACK, width=lw)\\n    d.ellipse((60 * u, 64 * u, 68 * u, 72 * u), fill=BLACK)\\n'''\\nassert s.count(old) == 1\\np.write_text(s.replace(old, new))\\nEOF\\n/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview 2>&1 | tail -3\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:45:25.702Z",
+      "lastAccessed": "2026-10-12T17:45:25.702Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:45:25.702Z"
+    },
+    "cmd-1791827163519": {
+      "key": "cmd-1791827163519",
+      "value": "{\"command\":\"sed -n 70,78p copy.md; sed -n 108,120p copy.md; sed -n 140,185p copy.md; grep -n 'GATA\\\\|5 MINUTE\\\\|ADAUGI\\\\|ITEM_\\\\|esp' design-direction.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:46:03.519Z",
+      "lastAccessed": "2026-10-12T17:46:03.519Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:46:03.519Z"
+    },
+    "cmd-1791827218685": {
+      "key": "cmd-1791827218685",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\nimport re\\np = Path(\\\"copy.md\\\"); s = p.read_text()\\nR = [\\n('| 1 | ADAUGI APĂ (10) | ȘI AGIȚI (8) | [adaptat din site] |\\\\n| 2 | GATA ÎN (7) | 5 MINUTE (8) | [din site] |',\\n '| 1 | APROAPE TOT (11) | E ÎN MIX (8) | [adaptat din site: „mixuri în care e deja aproape tot”] |\\\\n| 2 | REPEDE (6) | ȘI SIMPLU (9) | [confirmat de client, 12.10.2026] |'),\\n('| 2 | **GATA ÎN 5 MINUTE** | 16 | Adaugi apă, agiți și gătești. | 29 | [din site] |',\\n '| 2 | **REPEDE ȘI SIMPLU** | 16 | Mixul are deja aproape tot în el. | 33 | [confirmat de client, 12.10.2026] |'),\\n]\\nfor a,b in R:\\n    assert s.count(a)==1, a[:40]; s=s.replace(a,b)\\ns = re.sub(r'- USP 2: „Gata în 5 minute”.*\\\\n', '- USP 2: clientul a ales varianta generală „Repede și simplu” (12.10.2026), valabilă pentru toată gama. „Gata în 5 minute / adaugi apă” e adevărat doar la Pankees, deci nu se folosește aici.\\\\n', s)\\ns = s.replace('- USP 1: [DE CONFIRMAT CU CLIENTUL: condițiile exacte ale transportului gratuit, vezi întrebările].', '- USP 1: confirmat de client (12.10.2026): transport gratuit de la al 2-lea produs.')\\ns = s.replace('Adaugi apă și agiți, gata în 5 minute, fără conservanți.', 'Repede și simplu, fără conservanți.')\\ns = s.replace('- Fraza „ai acceptat să primești emailuri” rămâne doar dacă checkout-ul colectează acordul de marketing. [DE CONFIRMAT CU CLIENTUL]', '- Fraza „ai acceptat să primești emailuri” rămâne: checkout-ul colectează acordul de marketing (confirmat 12.10.2026).')\\ns = s.replace('- [DE CONFIRMAT CU CLIENTUL: denumirea juridică (SRL) și CUI, dacă vreți identificarea completă în footer]', '- Denumirea juridică și CUI intră în footer (confirmat 12.10.2026). [DE PRIMIT DE LA CLIENT: denumirea SRL și CUI-ul]')\\ns = s.replace('Email 1 la **1 oră** după', 'Email 1 la **30 de minute** după').replace('[DE CONFIRMAT CU CLIENTUL: timing-ul final, vezi și README]', '[Timing confirmat de client, 12.10.2026: 30 min / 24 h]').replace('dacă ora 1 cade între', 'dacă momentul trimiterii cade între')\\ns = s.replace('[DE CONFIRMAT CU CLIENTUL: checkout-ul colectează acordul de marketing? Fără el, emailul de abandon nu se trimite.]', '[Confirmat 12.10.2026: checkout-ul colectează acordul.]')\\ns += '''\\n### Răspunsuri client (12.10.2026)\\n1. Transport gratuit de la al 2-lea produs: confirmat.\\n2. ESP: **theMarketer**. Poate afișa produsele din coș; feed-ul de produse îl adaugă clientul în editor. În `index-esp.html` blocul de coș are placeholder-ul `[FEED PRODUSE THEMARKETER]`.\\n3. Consimțământ marketing la checkout: da.\\n4. Timing: Email 1 la 30 de minute, Email 2 la 24 de ore după Checkout Started.\\n5. USP 2: „Repede și simplu”.\\n6. URL produse și denumire juridică / CUI în footer: da. [DE PRIMIT DE LA CLIENT: URL-ul exact, denumirea SRL, CUI-ul]\\nRămân deschise: întrebarea 4 (evenimentul de comandă plasată în timp real în theMarketer) și link-ul de checkout care reface coșul.\\n'''\\np.write_text(s)\\n\\nd = Path(\\\"design-direction.md\\\"); t = d.read_text()\\nt = t.replace(\\\"ESP-ul nu e confirmat. `build.py` scrie două fișiere: `index.html` (preview, 2 rânduri marcate EXEMPLU cu preț „XX,XX lei”) și `index-esp.html` (același email, cu un singur rând `CART_ITEM_ROW` care conține variabilele). Blocul e marcat între `CART_ITEMS START` și `CART_ITEMS END`.\\\",\\n \\\"ESP: **theMarketer** (confirmat 12.10.2026). `build.py` scrie două fișiere: `index.html` (preview, 2 rânduri marcate EXEMPLU cu preț „XX,XX lei”) și `index-esp.html` (versiunea pentru theMarketer: în cardul „În coșul tău” e un placeholder `[FEED PRODUSE THEMARKETER]`, între comentariile `THEMARKETER_FEED`, pe care clientul îl înlocuiește cu blocul de produse din coș din editor; rândul de total lipsește, îl afișează feed-ul dacă e cazul). Blocul e marcat între `CART_ITEMS START` și `CART_ITEMS END`.\\\")\\nt = t.replace(\\\"Variabile folosite (nume generice, se înlocuiesc cu sintaxa ESP-ului ales): `{{ITEM_IMAGE_URL}}`, `{{ITEM_NAME}}`, `{{ITEM_QTY}}`, `{{ITEM_PRICE}}`, `{{ITEM_URL}}`, `{{CART_TOTAL}}`, `{{CHECKOUT_URL}}`\\\",\\n \\\"Variabile rămase (nume generice, se înlocuiesc cu tag-urile theMarketer): `{{CHECKOUT_URL}}`\\\")\\nt = t.replace(\\\"La conectare: bucla ESP-ului (for-each pe produsele din coș) înconjoară rândul `CART_ITEM_ROW`; imaginea produsului se cere pătrată, minim 192 x 192. Dacă ESP-ul nu dă total, se șterge rândul `CART_TOTAL_ROW`.\\\",\\n \\\"Lățimea utilă a cardului pentru feed: 516px desktop (card 520px cu bordură 2px), 100% pe mobil.\\\")\\nd.write_text(t)\\n\\nr = Path(\\\"../README.md\\\"); u = r.read_text()\\nu = u.replace('''- [ ] ESP (theMarketer?) și variabilele dinamice pentru produsele din coș (nume, imagine, cantitate, preț, link checkout)\\n- [ ] Timing: Email 1 la ? ore, Email 2 la ? ore după checkout started''', '''- [x] ESP: theMarketer; feed-ul de produse din coș îl adaugă clientul (placeholder în `index-esp.html`)\\n- [x] Timing: Email 1 la 30 de minute, Email 2 la 24 de ore după Checkout Started\\n- [x] Transport gratuit de la al 2-lea produs; acord marketing la checkout: da\\n- [ ] De primit: URL pagina de produse, denumire SRL, CUI (intră în footer)''')\\nu = u.replace('- [ ] Cele 3 USP pentru Email 1 (propunere în `email-01/brief.md`)', '- [x] USP Email 1: Transport gratuit / Repede și simplu / Fără conservanți')\\nr.write_text(u)\\nEOF\\ngrep -n 'ITEM_\\\\|5 minute\\\\|5 MINUTE' design-direction.md copy.md | head; git -C . status --short | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:46:58.685Z",
+      "lastAccessed": "2026-10-12T17:46:58.685Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:46:58.685Z"
+    },
+    "cmd-1791827270226": {
+      "key": "cmd-1791827270226",
+      "value": "{\"command\":\"ls -la assets images; grep -n 'IMAGES\\\\|images/' build.py | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:47:50.226Z",
+      "lastAccessed": "2026-10-12T17:47:50.226Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:47:50.226Z"
+    },
+    "cmd-1791827315199": {
+      "key": "cmd-1791827315199",
+      "value": "{\"command\":\"mv assets/img1-hero.png assets/img2-clatite.png images/ && /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview 2>&1 | tail -15\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:48:35.199Z",
+      "lastAccessed": "2026-10-12T17:48:35.199Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:48:35.199Z"
+    },
+    "cmd-1791827356819": {
+      "key": "cmd-1791827356819",
+      "value": "{\"command\":\"grep -n 'box\\\\|arrow\\\\|annot' build.py | sed -n 1,40p\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:49:16.819Z",
+      "lastAccessed": "2026-10-12T17:49:16.819Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:49:16.819Z"
+    },
+    "cmd-1791827390690": {
+      "key": "cmd-1791827390690",
+      "value": "{\"command\":\"sed -n 396,440p build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:49:50.690Z",
+      "lastAccessed": "2026-10-12T17:49:50.690Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:49:50.690Z"
+    },
+    "cmd-1791827440020": {
+      "key": "cmd-1791827440020",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"build.py\\\"); s=p.read_text()\\nR=[(\\\"    box = (480, 600)                         # rotated ~580 wide: clears the annotation columns\\\",\\n    \\\"    box = (600, 700)                         # real cutout is wide (floating pieces): bigger box so the stack reads at email size\\\"),\\n   (\\\"canvas.alpha_composite(src, ((W - src.width) // 2, 935 - src.height))\\\",\\n    \\\"canvas.alpha_composite(src, ((W - src.width) // 2, 975 - src.height))   # crosses the panel edge (~860)\\\"),\\n   (\\\"arrows = [((190, 300), (230, 400), (370, 420)),\\\\n              ((1000, 395), (980, 480), (850, 520)),\\\\n              ((200, 720), (280, 770), (370, 725))]\\\",\\n    \\\"arrows = [((190, 300), (220, 390), (330, 400)),\\\\n              ((1000, 395), (985, 470), (900, 500)),\\\\n              ((200, 720), (260, 765), (330, 730))]\\\")]\\nfor a,b in R:\\n    assert s.count(a)==1,a[:30]; s=s.replace(a,b)\\np.write_text(s)\\nEOF\\n/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview 2>&1 | grep -i 'hero\\\\|error'\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:50:40.020Z",
+      "lastAccessed": "2026-10-12T17:50:40.020Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:50:40.020Z"
+    },
+    "cmd-1791827589861": {
+      "key": "cmd-1791827589861",
+      "value": "{\"command\":\"sed -i '' 's/    box = (600, 700)  /    box = (720, 820)  /; s/(W - src.width) \\\\/\\\\/ 2, 975 - src.height)/(W - src.width) \\\\/\\\\/ 2, 1010 - src.height)/' build.py && grep -n 'box = (720\\\\|1010 - src' build.py && /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview 2>&1 | grep -i 'hero.jpg\\\\|error'\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:53:09.861Z",
+      "lastAccessed": "2026-10-12T17:53:09.861Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:53:09.861Z"
+    },
+    "cmd-1791827646175": {
+      "key": "cmd-1791827646175",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"build.py\\\"); s=p.read_text()\\nR=[(\\\"((W - src.width) // 2, 1010 - src.height))\\\", \\\"((W - src.width) // 2 + 45, 1010 - src.height))\\\"),\\n   (\\\"((1000, 395), (985, 470), (900, 500))\\\", \\\"((1060, 395), (1055, 455), (1000, 475))\\\")]\\nfor a,b in R:\\n    assert s.count(a)==1,a; s=s.replace(a,b)\\np.write_text(s)\\nEOF\\n/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview 2>&1 | grep -i 'hero.jpg\\\\|error'\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:54:06.175Z",
+      "lastAccessed": "2026-10-12T17:54:06.175Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:54:06.175Z"
+    },
+    "cmd-1791827749314": {
+      "key": "cmd-1791827749314",
+      "value": "{\"command\":\"sed -i '' 's/(W - src.width) \\\\/\\\\/ 2 + 45, 1010 - src.height)/(W - src.width) \\\\/\\\\/ 2 + 45, 930 - src.height)/' build.py && grep -c '930 - src.height' build.py && /private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview 2>&1 | grep -i 'hero.jpg\\\\|error'\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:55:49.314Z",
+      "lastAccessed": "2026-10-12T17:55:49.314Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:55:49.314Z"
+    },
+    "cmd-1791827801025": {
+      "key": "cmd-1791827801025",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"build.py\\\"); s=p.read_text()\\nR=[(\\\"(a[1], (1150, 250), \\\\\\\"right\\\\\\\", -5)\\\", \\\"(a[1], (1150, 150), \\\\\\\"right\\\\\\\", -5)\\\"),\\n   (\\\"((1060, 395), (1055, 455), (1000, 475))\\\", \\\"((1065, 300), (1065, 370), (1000, 395))\\\")]\\nfor a,b in R:\\n    assert s.count(a)==1,a; s=s.replace(a,b)\\np.write_text(s)\\nEOF\\n/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/7be401f0-0c6d-463a-a357-0f83090355fe/scratchpad/venv/bin/python build.py --preview 2>&1 | grep -i 'hero.jpg\\\\|error'\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:56:41.025Z",
+      "lastAccessed": "2026-10-12T17:56:41.025Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:56:41.025Z"
+    },
+    "cmd-1791882311617": {
+      "key": "cmd-1791882311617",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started/email-01 && cat copy.md; echo \\\"#####\\\"; cat design-direction.md; echo \\\"#####\\\"; cat image-prompts.md; echo \\\"#####\\\"; grep -n -i 'placeholder\\\\|{{' index-esp.html | head -30; wc -c index.html index-esp.html build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:05:11.617Z",
+      "lastAccessed": "2026-10-13T09:05:11.617Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:05:11.617Z"
+    }
+  },
+  "version": "3.0.0"
+}

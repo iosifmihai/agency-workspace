@@ -1,0 +1,32 @@
+{
+  "entries": {
+    "cmd-1791883417857": {
+      "key": "cmd-1791883417857",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment && sed -i '' 's/- \\\\[ \\\\] Strategie și structură/- [x] Strategie și structură (`email-01\\\\/strategy.md`)/; s/- \\\\[ \\\\] Copy$/- [x] Copy (`email-01\\\\/copy.md`), de aprobat/' README.md && grep -n \\\"\\\\[x\\\\]\\\" README.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:23:37.857Z",
+      "lastAccessed": "2026-10-13T09:23:37.857Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:23:37.857Z"
+    },
+    "cmd-1791884862963": {
+      "key": "cmd-1791884862963",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment && sed -i '' 's/- \\\\[ \\\\] Inspirație: de adăugat de Andreea în `email-01\\\\/refs\\\\/`/- [x] Inspirație în `email-01\\\\/refs\\\\/`/; s/- \\\\[ \\\\] Design direction (după refs)/- [x] Design direction + prompturi Higgsfield/; s/- \\\\[ \\\\] Build + preview/- [x] Build + preview + versiuni Figma (cu placeholdere de imagine)/' README.md && sed -n 17,26p README.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:47:42.963Z",
+      "lastAccessed": "2026-10-13T09:47:42.963Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:47:42.963Z"
+    },
+    "cmd-1791885011284": {
+      "key": "cmd-1791885011284",
+      "value": "{\"command\":\"M=/Users/andreea/.claude/projects/-Users-andreea-Documents-iosifmihai/memory; echo '- [Links added manually](links-added-manually.md) — Andreea puts all email links in the ESP herself; agents use placeholders only' > $M/MEMORY.md; cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment && cat >> README.md <<'EOF'\\n\\n## Linkuri\\nToate linkurile (`{{PRODUCT_URL}}`, rețete, `{{SHOP_URL}}`, dezabonare) le pune Andreea în theMarketer. Agenții lasă doar placeholdere. `{{PRODUCT_URL}}` pentru „Vezi produsul”: aprobat (13.10.2026).\\nEOF\\ntail -4 README.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:50:11.284Z",
+      "lastAccessed": "2026-10-13T09:50:11.284Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:50:11.284Z"
+    }
+  },
+  "version": "3.0.0"
+}

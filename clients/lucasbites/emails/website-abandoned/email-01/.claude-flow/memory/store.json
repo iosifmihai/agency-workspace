@@ -1,0 +1,275 @@
+{
+  "entries": {
+    "cmd-1791894271151": {
+      "key": "cmd-1791894271151",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01 && grep -n \\\"fiecare cu momentul ei\\\\|două pizza delicioase\\\\|să le mănânci”\\\\|Rețeta este foarte bună”\\\" copy.md | cut -c1-400\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:24:31.151Z",
+      "lastAccessed": "2026-10-13T12:24:31.151Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:24:31.151Z"
+    },
+    "cmd-1791894307844": {
+      "key": "cmd-1791894307844",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"copy.md\\\"); s=p.read_text()\\nreps=[(\\\"fiecare cu momentul ei. [adaptat din site] | 72 |\\\",\\\"fiecare cu momentul ei. [adaptat din site] | 71 |\\\"),\\n(\\\"două pizza delicioase!” | 102 |\\\",\\\"două pizza delicioase!” | 104 |\\\"),\\n(\\\"să le mănânci” | 89 |\\\",\\\"să le mănânci” | 91 (cu ghilimele; limita de 90 se aplică textului fără ghilimele, 89: UI Designer verifică să încapă) |\\\"),\\n(\\\"„Bun. Rețeta este foarte bună” | 28 |\\\",\\\"„Bun. Rețeta este foarte bună” | 30 |\\\")]\\nfor a,b in reps:\\n    assert s.count(a)==1,a; s=s.replace(a,b)\\np.write_text(s)\\nEOF\\necho ok\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:25:07.844Z",
+      "lastAccessed": "2026-10-13T12:25:07.844Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:25:07.844Z"
+    },
+    "cmd-1791894363763": {
+      "key": "cmd-1791894363763",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned && cat README.md email-01/brief.md email-01/copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:26:03.763Z",
+      "lastAccessed": "2026-10-13T12:26:03.763Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:26:03.763Z"
+    },
+    "cmd-1791894398881": {
+      "key": "cmd-1791894398881",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment/email-01 && wc -c build.py design-direction.md image-prompts.md && ls -la assets images refs && cat design-direction.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:26:38.881Z",
+      "lastAccessed": "2026-10-13T12:26:38.881Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:26:38.881Z"
+    },
+    "cmd-1791894438927": {
+      "key": "cmd-1791894438927",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && ls tools && head -60 tools/figma_export.py && grep -n \\\"^def \\\" tools/figma_export.py; cat browse-abandonment/email-01/image-prompts.md | head -80\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:27:18.927Z",
+      "lastAccessed": "2026-10-13T12:27:18.927Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:27:18.927Z"
+    },
+    "cmd-1791894469660": {
+      "key": "cmd-1791894469660",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && for d in welcome-01 welcome-02 welcome-03 new-customer-01 new-customer-02 checkout-started/email-01 checkout-started/email-02 browse-abandonment/email-01; do echo \\\"== $d\\\"; ls $d/refs 2>/dev/null; python3 -c \\\"\\nfrom PIL import Image\\\" 2>/dev/null; sips -g pixelWidth -g pixelHeight $d/preview.png | tail -2; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:27:49.660Z",
+      "lastAccessed": "2026-10-13T12:27:49.660Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:27:49.660Z"
+    },
+    "cmd-1791894506920": {
+      "key": "cmd-1791894506920",
+      "value": "{\"command\":\"python3 -m venv .venv && .venv/bin/pip install -q Pillow && .venv/bin/python -c \\\"import PIL;print(PIL.__version__)\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:28:26.920Z",
+      "lastAccessed": "2026-10-13T12:28:26.920Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:28:26.920Z"
+    },
+    "cmd-1791894546172": {
+      "key": "cmd-1791894546172",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && SP=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && mkdir -p $SP && website-abandoned/email-01/.venv/bin/python - <<EOF\\nfrom PIL import Image\\nds=[\\\"welcome-01\\\",\\\"welcome-02\\\",\\\"welcome-03\\\",\\\"new-customer-01\\\",\\\"new-customer-02\\\",\\\"checkout-started/email-01\\\",\\\"checkout-started/email-02\\\",\\\"browse-abandonment/email-01\\\"]\\nims=[Image.open(d+\\\"/preview.png\\\").convert(\\\"RGB\\\") for d in ds]\\n# each scaled to width 300, split into 2 halves side by side? Just scale to height 2400\\nfor grp,name in ((ds[:4],\\\"a\\\"),(ds[4:],\\\"b\\\")):\\n    sub=[Image.open(d+\\\"/preview.png\\\").convert(\\\"RGB\\\") for d in grp]\\n    H=2000\\n    sc=[i.resize((int(i.width*H/max(i.height,1)),H)) if i.height>H else i for i in sub]\\n    W=sum(i.width for i in sc)+20*len(sc)\\n    out=Image.new(\\\"RGB\\\",(W,H),\\\"grey\\\")\\n    x=0\\n    for i in sc: out.paste(i,(x,0)); x+=i.width+20\\n    out.save(\\\"$SP/fam_\\\"+name+\\\".png\\\")\\n    print(out.size)\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:29:06.172Z",
+      "lastAccessed": "2026-10-13T12:29:06.172Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:29:06.172Z"
+    },
+    "cmd-1791894581528": {
+      "key": "cmd-1791894581528",
+      "value": "{\"command\":\"grep -n -i \\\"de post\\\\|Vezi categoria\\\\|CATEGORY_URL_5\\\" copy.md | cut -c1-300 | head -20; grep -n \\\"^## \\\\|^### \\\" copy.md | tail -8\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:29:41.528Z",
+      "lastAccessed": "2026-10-13T12:29:41.528Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:29:41.528Z"
+    },
+    "cmd-1791894585968": {
+      "key": "cmd-1791894585968",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && SP=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && website-abandoned/email-01/.venv/bin/python - <<EOF\\nfrom PIL import Image\\nimport glob\\nfs=sorted(glob.glob(\\\"welcome-01/refs/*\\\"))+sorted(glob.glob(\\\"checkout-started/*/refs/*\\\"))+sorted(glob.glob(\\\"browse-abandonment/email-01/refs/*\\\"))+sorted(glob.glob(\\\"welcome-02/refs/*\\\"))\\nprint(fs)\\nH=1800\\nsc=[]\\nfor f in fs:\\n    i=Image.open(f).convert(\\\"RGB\\\"); sc.append(i.resize((int(i.width*H/i.height),H)))\\nW=sum(i.width for i in sc)+10*len(sc)\\nout=Image.new(\\\"RGB\\\",(W,H),\\\"grey\\\");x=0\\nfor i in sc: out.paste(i,(x,0)); x+=i.width+10\\nout.save(\\\"$SP/refs.png\\\");print(out.size)\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:29:45.968Z",
+      "lastAccessed": "2026-10-13T12:29:45.968Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:29:45.968Z"
+    },
+    "cmd-1791894616363": {
+      "key": "cmd-1791894616363",
+      "value": "{\"command\":\"sed -n 68,69p copy.md | tr '|' '\\\\n' | tail -6; sed -n 211,225p copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:30:16.363Z",
+      "lastAccessed": "2026-10-13T12:30:16.363Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:30:16.363Z"
+    },
+    "cmd-1791894623172": {
+      "key": "cmd-1791894623172",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && SP=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && website-abandoned/email-01/.venv/bin/python - <<EOF\\nfrom PIL import Image\\nimport glob\\nfs=sorted(glob.glob(\\\"welcome-01/refs/*\\\"))+sorted(glob.glob(\\\"checkout-started/*/refs/*\\\"))+sorted(glob.glob(\\\"browse-abandonment/email-01/refs/*\\\"))+sorted(glob.glob(\\\"welcome-02/refs/*\\\"))\\nfor n,grp in enumerate((fs[:5],fs[5:])):\\n    H=1900\\n    sc=[]\\n    for f in grp:\\n        i=Image.open(f).convert(\\\"RGB\\\"); sc.append(i.resize((int(i.width*H/i.height),H)))\\n    W=sum(i.width for i in sc)+10*len(sc)\\n    out=Image.new(\\\"RGB\\\",(W,H),\\\"grey\\\");x=0\\n    for i in sc: out.paste(i,(x,0)); x+=i.width+10\\n    out.save(f\\\"$SP/refs{n}.png\\\");print(out.size)\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:30:23.172Z",
+      "lastAccessed": "2026-10-13T12:30:23.172Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:30:23.172Z"
+    },
+    "cmd-1791894649271": {
+      "key": "cmd-1791894649271",
+      "value": "{\"command\":\"sed -n 68p copy.md | tr '|' '\\\\n' | sed -n 10,12p\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:30:49.271Z",
+      "lastAccessed": "2026-10-13T12:30:49.271Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:30:49.271Z"
+    },
+    "cmd-1791895364991": {
+      "key": "cmd-1791895364991",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"copy.md\\\"); s=p.read_text()\\na=\\\"**Vezi categoria** → `{{CATEGORY_URL_5}}`, `utm_content=cat_post` | 14 |\\\"\\nb=\\\"**Vezi produsul** [nou; De post e produs separat, confirmat 13.10.2026] → `{{CATEGORY_URL_5}}`, `utm_content=cat_post` | 13 |\\\"\\nassert s.count(a)==1; s=s.replace(a,b)\\ns=s.rstrip()+\\\"\\\"\\\"\\n\\n### Răspunsuri client (13.10.2026)\\n1. Recenzii cu prenume + inițială: **da**. „Liliana” e prenumele, cardul Liliana F. rămâne.\\n2. USP 2 „ȘI ÎN MAGAZINE” cu lista de retaileri: **da**.\\n3. De post: **produs separat** (Vegan Classic Pankees), nu filtru. Cardul 5 duce la produs: CTA **Vezi produsul** (13), placeholder-ul rămâne `{{CATEGORY_URL_5}}` (linkul îl pune Andreea).\\n\\\"\\\"\\\"\\np.write_text(s+\\\"\\\\n\\\")\\nEOF\\ntail -5 copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:42:44.991Z",
+      "lastAccessed": "2026-10-13T12:42:44.991Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:42:44.991Z"
+    },
+    "cmd-1791895408488": {
+      "key": "cmd-1791895408488",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai && ls Logo Fonturi; sed -n 60,140p clients/lucasbites/emails/tools/figma_export.py; grep -n \\\"black\\\\|negru\\\\|Logo\\\" clients/lucasbites/discovery.md | head -30\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:43:28.488Z",
+      "lastAccessed": "2026-10-13T12:43:28.488Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:43:28.488Z"
+    },
+    "cmd-1791895448187": {
+      "key": "cmd-1791895448187",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai && clients/lucasbites/emails/website-abandoned/email-01/.venv/bin/python - <<'EOF'\\nfrom PIL import ImageFont\\nak=ImageFont.truetype(\\\"Fonturi/Akrobat-Bold.otf\\\",20); ar=ImageFont.truetype(\\\"/System/Library/Fonts/Supplemental/Arial Bold.ttf\\\",20)\\nakb=ImageFont.truetype(\\\"Fonturi/Akrobat-Black.otf\\\",60)\\nfor t in [\\\"APROAPE TOT E ÎN MIX\\\",\\\"ȘI ÎN MAGAZINE\\\",\\\"TRANSPORT GRATUIT\\\"]:\\n    print(t, ak.getlength(t)+0.5*len(t), ar.getlength(t)+0.5*len(t))\\nfor s,t in [(24,\\\"PANCAKES & CRÊPES\\\"),(24,\\\"PRĂJITURI\\\"),(22,\\\"DE POST\\\")]:\\n    print(t, ImageFont.truetype(\\\"Fonturi/Akrobat-Bold.otf\\\",s).getlength(t), ImageFont.truetype(\\\"/System/Library/Fonts/Supplemental/Arial Bold.ttf\\\",s).getlength(t))\\nfor t in [\\\"CE PUNEM AZI\\\",\\\"PE MASĂ?\\\"]: print(t, akb.getlength(t))\\nfor t in [\\\"ÎNCERCATE ȘI NOTATE\\\",\\\"CE GĂSEȘTI LA NOI\\\",\\\"NU ȘTII DE UNDE\\\"]: print(t, ImageFont.truetype(\\\"Fonturi/Akrobat-Black.otf\\\",40).getlength(t))\\nEOF\\ngrep -n \\\"Card 5\\\\|DE POST\\\\|Vezi produsul\\\" clients/lucasbites/emails/website-abandoned/email-01/copy.md | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:44:08.187Z",
+      "lastAccessed": "2026-10-13T12:44:08.187Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:44:08.187Z"
+    },
+    "cmd-1791895482960": {
+      "key": "cmd-1791895482960",
+      "value": "{\"command\":\"sed -n 64,90p copy.md; sed -n 210,230p copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:44:42.960Z",
+      "lastAccessed": "2026-10-13T12:44:42.960Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:44:42.960Z"
+    },
+    "cmd-1791895591114": {
+      "key": "cmd-1791895591114",
+      "value": "{\"command\":\"ls \\\"/System/Library/Fonts/Supplemental/\\\" | grep -i narrow; cd /Users/andreea/Documents/iosifmihai && clients/lucasbites/emails/website-abandoned/email-01/.venv/bin/python - <<'EOF'\\nfrom PIL import ImageFont\\nfor f in [\\\"/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf\\\",\\\"Fonturi/Akrobat-Bold.otf\\\",\\\"/System/Library/Fonts/Supplemental/Arial Bold.ttf\\\"]:\\n  for s in (18,15,14):\\n    fo=ImageFont.truetype(f,s); t=\\\"APROAPE TOT E ÎN MIX\\\"\\n    print(f.split('/')[-1],s,round(fo.getlength(t)+0.3*len(t)))\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:46:31.114Z",
+      "lastAccessed": "2026-10-13T12:46:31.114Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:46:31.114Z"
+    },
+    "cmd-1791895822606": {
+      "key": "cmd-1791895822606",
+      "value": "{\"command\":\".venv/bin/python build.py --preview 2>&1 | tail -40\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:50:22.606Z",
+      "lastAccessed": "2026-10-13T12:50:22.606Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:50:22.606Z"
+    },
+    "cmd-1791895857752": {
+      "key": "cmd-1791895857752",
+      "value": "{\"command\":\"SP=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && .venv/bin/python - <<EOF\\nfrom PIL import Image\\nfor n in (\\\"preview\\\",\\\"preview-mobile\\\"):\\n    im=Image.open(n+\\\".png\\\"); h=im.height; k=3\\n    for i in range(k):\\n        im.crop((0,i*h//k,im.width,(i+1)*h//k)).save(f\\\"$SP/{n}-{i}.png\\\")\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:50:57.752Z",
+      "lastAccessed": "2026-10-13T12:50:57.752Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:50:57.752Z"
+    },
+    "cmd-1791895918965": {
+      "key": "cmd-1791895918965",
+      "value": "{\"command\":\"sed -i '' 's/<td class=\\\"sc\\\" width=\\\"254\\\" valign=\\\"top\\\" bgcolor=\\\"#FFFFFF\\\" style=\\\"width:254px;/<td class=\\\"sc\\\" width=\\\"232\\\" valign=\\\"top\\\" bgcolor=\\\"#FFFFFF\\\" style=\\\"width:232px;/; s/border-collapse:separate;table-layout:fixed;/border-collapse:separate;border-spacing:0;table-layout:fixed;/; s/style=\\\"width:520px;border-collapse:separate;\\\">/style=\\\"width:520px;border-collapse:separate;border-spacing:0;\\\">/g; s/<td class=\\\"stack rv-pad\\\" width=\\\"254\\\" valign=\\\"top\\\" bgcolor=\\\"#F7ACB4\\\" style=\\\"width:254px;/<td class=\\\"stack rv-pad\\\" width=\\\"204\\\" valign=\\\"top\\\" bgcolor=\\\"#F7ACB4\\\" style=\\\"width:204px;/; s/<td class=\\\"stack rv-pad\\\" width=\\\"254\\\" valign=\\\"top\\\" bgcolor=\\\"#86D2DA\\\" style=\\\"width:254px;/<td class=\\\"stack rv-pad\\\" width=\\\"204\\\" valign=\\\"top\\\" bgcolor=\\\"#86D2DA\\\" style=\\\"width:204px;/; s/font-size:30px;line-height:30px;font-weight:bold;letter-spacing:0.5px;text-transform:uppercase;color:#000000;mso-line-height-rule:exactly;\\\"><a href=\\\"{url}\\\"/font-size:28px;line-height:30px;font-weight:bold;letter-spacing:0.5px;text-transform:uppercase;color:#000000;mso-line-height-rule:exactly;\\\"><a href=\\\"{url}\\\"/' build.py && grep -c \\\"border-spacing:0\\\" build.py && .venv/bin/python build.py --preview 2>&1 | grep -E \\\"preview|KB\\\\)|!!\\\" ; SP=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; .venv/bin/python - <<EOF\\nfrom PIL import Image\\nfor n in (\\\"preview\\\",\\\"preview-mobile\\\"):\\n    im=Image.open(n+\\\".png\\\"); h=im.height; k=3\\n    for i in range(k):\\n        im.crop((0,i*h//k,im.width,(i+1)*h//k)).save(f\\\"$SP/{n}-{i}.png\\\")\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:51:58.965Z",
+      "lastAccessed": "2026-10-13T12:51:58.965Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:51:58.965Z"
+    },
+    "cmd-1791895971889": {
+      "key": "cmd-1791895971889",
+      "value": "{\"command\":\".venv/bin/python - <<'EOF'\\np=\\\"build.py\\\"; s=open(p).read()\\ns=s.replace(\\\"height:76px!important;}\\\",\\\"height:58px!important;}\\\")\\ns=s.replace(\\\"\\\"\\\"        q = f'font-family:{AK};font-size:34px;line-height:36px;font-weight:bold;'\\\"\\\"\\\",\\\"\\\"\\\"        q = f'font-family:{AR};font-size:24px;line-height:32px;font-weight:bold;'\\\"\\\"\\\")\\ns=s.replace(\\\".q-short{font-size:30px!important;line-height:32px!important;}\\\",\\\".q-short{font-size:22px!important;line-height:30px!important;}\\\")\\ns=s.replace('''    t = e(s)\\n    i = t.rfind(\\\" \\\")''','''    t = \\\" \\\".join(f'<span style=\\\"white-space:nowrap;\\\">{e(w)}</span>' if \\\"-\\\" in w else e(w) for w in s.split(\\\" \\\"))\\n    i = t.rfind(\\\" \\\")''')\\ns=s.replace('padding:12px 20px 16px 8px;text-align:left;','padding:12px 12px 16px 8px;text-align:left;')\\nopen(p,\\\"w\\\").write(s)\\nEOF\\ngrep -n \\\"def nb\\\" -A6 build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:52:51.889Z",
+      "lastAccessed": "2026-10-13T12:52:51.889Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:52:51.889Z"
+    },
+    "cmd-1791896013369": {
+      "key": "cmd-1791896013369",
+      "value": "{\"command\":\".venv/bin/python - <<'EOF'\\np=\\\"build.py\\\"; s=open(p).read()\\nold='''    t = \\\" \\\".join(f'<span style=\\\"white-space:nowrap;\\\">{e(w)}</span>' if \\\"-\\\" in w else e(w) for w in s.split(\\\" \\\"))\\n    i = t.rfind(\\\" \\\")\\n    return t if i < 0 else t[:i] + \\\"&nbsp;\\\" + t[i + 1:]'''\\nnew='''    words = [f'<span style=\\\"white-space:nowrap;\\\">{e(w)}</span>' if \\\"-\\\" in w else e(w) for w in s.split(\\\" \\\")]\\n    if len(words) < 2:\\n        return \\\"\\\".join(words)\\n    return \\\" \\\".join(words[:-2] + [words[-2] + \\\"&nbsp;\\\" + words[-1]])'''\\ns=s.replace(old,new); open(p,\\\"w\\\").write(s)\\nEOF\\n.venv/bin/python build.py --preview 2>&1 | grep -E \\\"preview|index|!!\\\"; SP=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; .venv/bin/python - <<EOF\\nfrom PIL import Image\\nim=Image.open(\\\"preview.png\\\"); im.crop((0,500,600,1800)).save(\\\"$SP/d.png\\\")\\nim=Image.open(\\\"preview-mobile.png\\\"); im.crop((0,950,375,2200)).save(\\\"$SP/m.png\\\")\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:53:33.369Z",
+      "lastAccessed": "2026-10-13T12:53:33.369Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:53:33.369Z"
+    },
+    "cmd-1791896058105": {
+      "key": "cmd-1791896058105",
+      "value": "{\"command\":\"sed -i '' 's/height:58px!important;}/height:38px!important;}/' build.py && .venv/bin/python build.py --preview 2>&1 | grep -E \\\"preview|index|!!|missing\\\"; .venv/bin/python -c \\\"\\nfrom PIL import Image\\nImage.open('preview-mobile.png').crop((0,950,375,1800)).save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad/m.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:54:18.105Z",
+      "lastAccessed": "2026-10-13T12:54:18.105Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:54:18.105Z"
+    },
+    "cmd-1791896097370": {
+      "key": "cmd-1791896097370",
+      "value": "{\"command\":\"cp ../../browse-abandonment/email-01/images/rec3-brownie.png images/cat2-prajituri.png && .venv/bin/python build.py >/dev/null && rm images/cat2-prajituri.png && .venv/bin/python -c \\\"\\nfrom PIL import Image\\na=Image.open('assets/cat2-prajituri.jpg'); a.save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad/t.png')\\nImage.open('preview.png').crop((0,2050,600,2500)).save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad/r.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:54:57.370Z",
+      "lastAccessed": "2026-10-13T12:54:57.370Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:54:57.370Z"
+    },
+    "cmd-1791896133347": {
+      "key": "cmd-1791896133347",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails && grep -il \\\"lemon\\\\|carrot\\\\|pear\\\\b\\\\|pears\\\\|mini pizza\\\\|individual pizza\\\\|spoon\\\" */image-prompts.md */*/image-prompts.md; grep -ho \\\"[^.]*\\\\(lemon\\\\|carrot\\\\|pear slices\\\\|spoon\\\\)[^.]*\\\" */image-prompts.md */*/image-prompts.md | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:55:33.347Z",
+      "lastAccessed": "2026-10-13T12:55:33.347Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:55:33.347Z"
+    },
+    "cmd-1791896283720": {
+      "key": "cmd-1791896283720",
+      "value": "{\"command\":\".venv/bin/python - <<'EOF'\\np=\\\"design-direction.md\\\"; s=open(p).read()\\ns=s.replace(\\\"Dacă se vrea 20px ca în restul seriei, titlul ar trebui scurtat la max ~17 car. (de exemplu „E APROAPE TOT ÎN MIX” nu ajută; „TOTUL E ÎN MIX” ar schimba sensul, deci nu propun înlocuire, doar semnalez).\\\",\\\"Dacă se vrea 20px ca în restul seriei, titlul ar trebui să aibă max ~17 car.; nu propun o formulare, doar semnalez.\\\")\\ns=s.replace(\\\"5 rânduri desktop, 3 pe mobil\\\",\\\"4 rânduri desktop, 3 pe mobil (stivuit)\\\")\\nopen(p,\\\"w\\\").write(s)\\nEOF\\ngrep -c \\\"—\\\" design-direction.md image-prompts.md build.py; .venv/bin/python build.py --preview 2>&1 | grep -E \\\"cat|index|preview|figma\\\"; grep -o \\\"{{[A-Z_0-9]*}}\\\" index.html | sort | uniq -c; grep -c \\\"utm_campaign=website_01\\\" index.html; ls\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:58:03.720Z",
+      "lastAccessed": "2026-10-13T12:58:03.720Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:58:03.720Z"
+    },
+    "cmd-1791896335020": {
+      "key": "cmd-1791896335020",
+      "value": "{\"command\":\"sed -i '' 's/; la De post rămâne „Vezi categoria” (14)\\\\./; la De post CTA-ul e „Vezi produsul” (13), produs separat (13.10.2026)./' copy.md && grep -n \\\"la De post CTA\\\" copy.md | cut -c1-80; sed -n '/^## cat1/,$p' image-prompts.md | head -60; grep -n \\\"| cat\\\" image-prompts.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:58:55.020Z",
+      "lastAccessed": "2026-10-13T12:58:55.020Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:58:55.020Z"
+    },
+    "cmd-1791896482313": {
+      "key": "cmd-1791896482313",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/website-abandoned/email-01/images && U=https://d8j0ntlcm91z4.cloudfront.net/user_3KV75djUlaE2wMI8Z7Y0cBzoFOd && curl -sSf -o cat1-pancakes.png $U/hf_20261013_130036_a93114ff-9075-46e8-bdf9-7ea8d9286f93.png && curl -sSf -o cat2-prajituri.png $U/hf_20261013_125954_7f4f6af6-e63b-4d9f-b3c1-327969a23137.png && curl -sSf -o cat3-budinci.png $U/hf_20261013_125955_e793d75a-0059-40e7-9114-1d52061c1a3f.png && curl -sSf -o cat4-pizza.png $U/hf_20261013_125954_4da8dca8-ffd0-4ee8-bf89-f6568c719daa.png && curl -sSf -o cat5-post.png $U/hf_20261013_125954_8f4acdd5-505d-4fd1-8f14-a5a63179f44d.png && cd .. && S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && .venv/bin/python -c \\\"\\nfrom PIL import Image\\nn=['cat1-pancakes','cat2-prajituri','cat3-budinci','cat4-pizza','cat5-post']\\nims=[Image.open(f'images/{x}.png').convert('RGB').resize((400,400)) for x in n]\\nc=Image.new('RGB',(2040,400),'white')\\nfor i,im in enumerate(ims): c.paste(im,(i*410,0))\\nc.save('$S/cats.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:01:22.313Z",
+      "lastAccessed": "2026-10-13T13:01:22.313Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:01:22.313Z"
+    },
+    "cmd-1791896523865": {
+      "key": "cmd-1791896523865",
+      "value": "{\"command\":\".venv/bin/python build.py --preview 2>&1 | grep -E \\\"cat|index|preview|figma|Error|NOTE\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T13:02:03.865Z",
+      "lastAccessed": "2026-10-13T13:02:03.865Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T13:02:03.865Z"
+    }
+  },
+  "version": "3.0.0"
+}

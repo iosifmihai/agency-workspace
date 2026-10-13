@@ -1,0 +1,248 @@
+{
+  "entries": {
+    "cmd-1791883623802": {
+      "key": "cmd-1791883623802",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment/email-01 && ls -la refs\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:27:03.802Z",
+      "lastAccessed": "2026-10-13T09:27:03.802Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:27:03.802Z"
+    },
+    "cmd-1791883685344": {
+      "key": "cmd-1791883685344",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; ls -la browse-abandonment browse-abandonment/email-01 checkout-started checkout-started/email-01 checkout-started/email-02 welcome-03 tools; ls browse-abandonment/email-01/refs; which ffmpeg; wc -c browse-abandonment/email-01/* checkout-started/email-01/* welcome-03/* 2>/dev/null | sort -n | tail -40\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:28:05.344Z",
+      "lastAccessed": "2026-10-13T09:28:05.344Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:28:05.344Z"
+    },
+    "cmd-1791883718120": {
+      "key": "cmd-1791883718120",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; cat browse-abandonment/README.md browse-abandonment/email-01/brief.md; cat browse-abandonment/email-01/copy.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:28:38.120Z",
+      "lastAccessed": "2026-10-13T09:28:38.120Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:28:38.120Z"
+    },
+    "cmd-1791883751630": {
+      "key": "cmd-1791883751630",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; cat checkout-started/email-01/design-direction.md checkout-started/email-02/design-direction.md; cat tools/figma_export.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:29:11.630Z",
+      "lastAccessed": "2026-10-13T09:29:11.630Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:29:11.630Z"
+    },
+    "cmd-1791883789321": {
+      "key": "cmd-1791883789321",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; grep -n \\\"figma\\\\|sys.path\\\\|HERE =\\\" welcome-03/build.py welcome-01/build.py | head; ls -a checkout-started/email-01 checkout-started/email-02 | grep -i venv; find /Users/andreea/Documents/iosifmihai -maxdepth 6 -name \\\".venv\\\" -type d 2>/dev/null | head; for f in welcome-01 welcome-02 welcome-03 checkout-started/email-01 checkout-started/email-02; do echo \\\"=== $f\\\"; cat $f/image-prompts.md; done\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:29:49.321Z",
+      "lastAccessed": "2026-10-13T09:29:49.321Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:29:49.321Z"
+    },
+    "cmd-1791883825386": {
+      "key": "cmd-1791883825386",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; sed -n 495,520p welcome-03/build.py; grep -n \\\"^def \\\\|^    def \\\" checkout-started/email-02/build.py; grep -n \\\"Hero\\\\|hero\\\\|tranzi\\\\|Tranzi\\\" welcome-03/design-direction.md | head -20; grep -rn \\\"hero\\\\|Hero\\\" welcome-01/design-direction.md welcome-02/design-direction.md 2>/dev/null | grep -i \\\"culoare\\\\|fundal\\\\|portocal\\\\|negru\\\" | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:30:25.386Z",
+      "lastAccessed": "2026-10-13T09:30:25.386Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:30:25.386Z"
+    },
+    "cmd-1791884005887": {
+      "key": "cmd-1791884005887",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites; grep -n \\\"## 7\\\" -A 25 discovery.md | head -50; ls /Users/andreea/Documents/iosifmihai/Logo /Users/andreea/Documents/iosifmihai/Fonturi; grep -n \\\"logo\\\" emails/welcome-03/index.html | head -5\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:33:25.887Z",
+      "lastAccessed": "2026-10-13T09:33:25.887Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:33:25.887Z"
+    },
+    "cmd-1791884044659": {
+      "key": "cmd-1791884044659",
+      "value": "{\"command\":\"python3 -m venv .venv && .venv/bin/pip install -q Pillow 2>&1 | tail -3; .venv/bin/python -c \\\"import PIL; print(PIL.__version__)\\\"; ls \\\"/Applications/Google Chrome.app/Contents/MacOS/\\\" \",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:34:04.659Z",
+      "lastAccessed": "2026-10-13T09:34:04.659Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:34:04.659Z"
+    },
+    "cmd-1791884114596": {
+      "key": "cmd-1791884114596",
+      "value": "{\"command\":\".venv/bin/python - <<'EOF'\\nfrom PIL import ImageFont\\nfa=ImageFont.truetype(\\\"/Users/andreea/Documents/iosifmihai/Fonturi/Akrobat-Bold.otf\\\",26)\\nfk=ImageFont.truetype(\\\"/Users/andreea/Documents/iosifmihai/Fonturi/Akrobat-Black.otf\\\",34)\\nfn=ImageFont.truetype(\\\"/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf\\\",26)\\nfb=ImageFont.truetype(\\\"/System/Library/Fonts/Supplemental/Arial Bold.ttf\\\",26)\\nfor t in [\\\"PANKEES DE POST\\\",\\\"CU FRUCTE\\\",\\\"PIZZA DE CASĂ\\\",\\\"CU PEPPERONI\\\",\\\"BROWNIE CU FRUCTE\\\",\\\"DE PĂDURE\\\",\\\"TRANSPORT GRATUIT\\\",\\\"CE IESE DINTR-UN MIX\\\",\\\"POFTA NU\\\",\\\"SE GRĂBEȘTE.\\\",\\\"CE FACI CU\\\",\\\"POFTA ASTA?\\\"]:\\n    print(t, round(fa.getlength(t)), round(fn.getlength(t)), round(fb.getlength(t)), \\\"black34:\\\",round(fk.getlength(t)))\\nf14=ImageFont.truetype(\\\"/System/Library/Fonts/Supplemental/Arial.ttf\\\",15)\\nfor t in [\\\"Cu Vegan Classic Pankees\\\",\\\"De adus colegilor, la cafeaua de la 11.\\\",\\\"Pizza de casă la începutul filmului.\\\"]:\\n    print(t, round(f14.getlength(t)))\\nEOF\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:35:14.596Z",
+      "lastAccessed": "2026-10-13T09:35:14.596Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:35:14.596Z"
+    },
+    "cmd-1791884153531": {
+      "key": "cmd-1791884153531",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails; sed -n 352,375p checkout-started/email-02/build.py; sed -n 944,1000p checkout-started/email-02/build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:35:53.531Z",
+      "lastAccessed": "2026-10-13T09:35:53.531Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:35:53.531Z"
+    },
+    "cmd-1791884386011": {
+      "key": "cmd-1791884386011",
+      "value": "{\"command\":\".venv/bin/python build.py --preview 2>&1 | tail -40\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:39:46.011Z",
+      "lastAccessed": "2026-10-13T09:39:46.011Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:39:46.011Z"
+    },
+    "cmd-1791884427552": {
+      "key": "cmd-1791884427552",
+      "value": "{\"command\":\".venv/bin/python -c \\\"\\nfrom PIL import Image\\nim=Image.open('preview.png'); im.crop((0,0,600,1000)).save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad/top.png')\\nim.crop((0,1000,600,2000)).save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad/mid.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:40:27.552Z",
+      "lastAccessed": "2026-10-13T09:40:27.552Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:40:27.552Z"
+    },
+    "cmd-1791884472051": {
+      "key": "cmd-1791884472051",
+      "value": "{\"command\":\".venv/bin/python build.py --preview 2>&1 | grep -E \\\"gif|KB$|preview|figma|!!\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:41:12.051Z",
+      "lastAccessed": "2026-10-13T09:41:12.051Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:41:12.051Z"
+    },
+    "cmd-1791884508204": {
+      "key": "cmd-1791884508204",
+      "value": "{\"command\":\".venv/bin/python -c \\\"\\nfrom PIL import Image\\ng=Image.open('assets/rec2-pizza.gif'); print(g.mode, g.info.get('transparency'), g.convert('RGB').getpixel((2,2)), g.getpixel((2,2)))\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:41:48.204Z",
+      "lastAccessed": "2026-10-13T09:41:48.204Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:41:48.204Z"
+    },
+    "cmd-1791884546500": {
+      "key": "cmd-1791884546500",
+      "value": "{\"command\":\".venv/bin/python -c \\\"\\nfrom PIL import Image\\nimport build as b\\nrec=b.RECIPES[1]\\nc=b.compose_arch(b.placeholder_photo((392,528),rec['ph'],'REC2','x'),1.5,'02',rec['badge'])\\nprint(c.getpixel((2,2)))\\npal=c.quantize(colors=160,method=Image.Quantize.MEDIANCUT)\\nprint(pal.getpalette()[:12], len(pal.getpalette()))\\n\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:42:26.500Z",
+      "lastAccessed": "2026-10-13T09:42:26.500Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:42:26.500Z"
+    },
+    "cmd-1791884590270": {
+      "key": "cmd-1791884590270",
+      "value": "{\"command\":\"grep -n \\\"putpalette\\\\|q = \\\\[\\\" build.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:43:10.270Z",
+      "lastAccessed": "2026-10-13T09:43:10.270Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:43:10.270Z"
+    },
+    "cmd-1791884632123": {
+      "key": "cmd-1791884632123",
+      "value": "{\"command\":\".venv/bin/python -c \\\"\\nfrom PIL import Image\\nimport build as b\\nb.ASSETS.mkdir(exist_ok=True); b.build_recipe_gif(); print(b.report)\\ng=Image.open('assets/rec2-pizza.gif'); print(g.convert('RGB').getpixel((2,2)))\\n# synthetic animated test\\nimport shutil\\nfr=[b.placeholder_photo((392,528),b.TURQ if i%2 else b.ORANGE,'T',str(i)) for i in range(24)]\\nfr[0].save('images/rec2-pizza.gif',save_all=True,append_images=fr[1:],duration=83,loop=0)\\nb.report.clear(); b.build_recipe_gif(); print(b.report)\\n\\\"; rm images/rec2-pizza.gif\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:43:52.123Z",
+      "lastAccessed": "2026-10-13T09:43:52.123Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:43:52.123Z"
+    },
+    "cmd-1791884672661": {
+      "key": "cmd-1791884672661",
+      "value": "{\"command\":\".venv/bin/python build.py --preview 2>&1 | grep -E \\\"gif|index|preview|figma|!!\\\" && .venv/bin/python -c \\\"\\nfrom PIL import Image\\nim=Image.open('preview-mobile.png'); im.crop((0,0,375,900)).save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad/m1.png'); im.crop((0,1400,375,2300)).save('/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad/m2.png')\\\"; grep -c \\\"THEMARKETER_FEED\\\" index-esp.html; grep -o \\\"PRODUS VIZUALIZAT THEMARKETER\\\" index-esp.html; grep -c \\\"EXEMPLU\\\" index-esp.html\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:44:32.661Z",
+      "lastAccessed": "2026-10-13T09:44:32.661Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:44:32.661Z"
+    },
+    "cmd-1791884808580": {
+      "key": "cmd-1791884808580",
+      "value": "{\"command\":\"grep -c \\\"—\\\" design-direction.md image-prompts.md build.py index.html; ls\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:46:48.580Z",
+      "lastAccessed": "2026-10-13T09:46:48.580Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:46:48.580Z"
+    },
+    "cmd-1791891945909": {
+      "key": "cmd-1791891945909",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment/email-01 && cat image-prompts.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:45:45.909Z",
+      "lastAccessed": "2026-10-13T11:45:45.909Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:45:45.909Z"
+    },
+    "cmd-1791892156374": {
+      "key": "cmd-1791892156374",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment/email-01 && .venv/bin/pip install -q imageio-ffmpeg 2>&1 | tail -2; .venv/bin/python -c \\\"import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())\\\"; grep -n \\\"ffmpeg\\\" build.py | head\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:49:16.374Z",
+      "lastAccessed": "2026-10-13T11:49:16.374Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:49:16.374Z"
+    },
+    "cmd-1791892221893": {
+      "key": "cmd-1791892221893",
+      "value": "{\"command\":\".venv/bin/python build.py --preview 2>&1 | tail -30\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:50:21.893Z",
+      "lastAccessed": "2026-10-13T11:50:21.893Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:50:21.893Z"
+    },
+    "cmd-1791892256399": {
+      "key": "cmd-1791892256399",
+      "value": "{\"command\":\"S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad && .venv/bin/python -c \\\"\\nfrom PIL import Image\\nim=Image.open('preview.png'); im.crop((0,850,600,2300)).save('$S/p-mid.png'); im.crop((0,2300,600,3431)).save('$S/p-bot.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:50:56.399Z",
+      "lastAccessed": "2026-10-13T11:50:56.399Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:50:56.399Z"
+    },
+    "cmd-1791892442679": {
+      "key": "cmd-1791892442679",
+      "value": "{\"command\":\"curl -sSf -o images/rec2-pizza.mp4 https://d8j0ntlcm91z4.cloudfront.net/user_3KV75djUlaE2wMI8Z7Y0cBzoFOd/hf_20261013_114859_487796e0-38ee-4612-82f7-99c7032d23e3.mp4 && ls -la images/rec2-pizza.mp4 && .venv/bin/python build.py --preview 2>&1 | grep -E \\\"rec2|NOTE|Error|index|figma\\\" ; S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; .venv/bin/python -c \\\"\\nfrom PIL import Image, ImageSequence\\nim=Image.open('assets/rec2-pizza.gif'); fr=[f.convert('RGB') for f in ImageSequence.Iterator(im)]\\nprint(len(fr),'frames')\\nidx=[0,len(fr)//3,2*len(fr)//3,len(fr)-1]\\nw,h=fr[0].size; c=Image.new('RGB',(w*4+30,h),'white')\\nfor k,i in enumerate(idx): c.paste(fr[i],(k*(w+10),0))\\nc.save('$S/gif-frames.png')\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:54:02.679Z",
+      "lastAccessed": "2026-10-13T11:54:02.679Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:54:02.679Z"
+    },
+    "cmd-1791892483422": {
+      "key": "cmd-1791892483422",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/browse-abandonment && sed -i '' 's/- \\\\[ \\\\] Imagini Higgsfield: în așteptare, planul Plus intră la 14:20 (13.10.2026)/- [x] Imagini Higgsfield generate 13.10.2026 (GPT Image 2.5 high 2K; video Seedance 2.5, 4 s, 720p -> GIF 48 cadre, 290 KB)/' README.md && cd email-01 && python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"image-prompts.md\\\"); s=p.read_text()\\ns=s.replace(\\\"**Nu sunt generate încă** (creditele Higgsfield nu sunt disponibile la 13.10.2026). Build-ul folosește placeholdere la dimensiunea finală.\\\",\\n\\\"**Generate 13.10.2026:** imaginile cu `gpt_image_2_5` (quality high, 2K, background opaque), video-ul cu `seedance_2_5` (omni_reference, start_image = end_image = rec2-pizza, 4 s, 720p, fără audio). GIF-ul se face local cu ffmpeg din `.venv` (`pip install imageio-ffmpeg`), fără instalare pe sistem.\\\")\\np.write_text(s)\\nEOF\\ngrep -n \\\"Generate 13\\\" image-prompts.md | cut -c1-80; grep -n \\\"Higgsfield\\\" ../README.md\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:54:43.422Z",
+      "lastAccessed": "2026-10-13T11:54:43.422Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:54:43.422Z"
+    },
+    "cmd-1791892759580": {
+      "key": "cmd-1791892759580",
+      "value": "{\"command\":\"grep -n -i \\\"transport gratuit\\\\|usp-t\\\\|def usp\\\\|USPS\\\\|white-space\\\" build.py | head -20\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T11:59:19.580Z",
+      "lastAccessed": "2026-10-13T11:59:19.580Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T11:59:19.580Z"
+    },
+    "cmd-1791892813461": {
+      "key": "cmd-1791892813461",
+      "value": "{\"command\":\"python3 - <<'EOF'\\nfrom pathlib import Path\\np=Path(\\\"build.py\\\"); s=p.read_text()\\nold='''<p class=\\\"tb\\\" style=\\\"margin:0 0 6px 0;font-family:Akrobat,'Arial Narrow',Arial,sans-serif;font-size:20px;line-height:22px;font-weight:bold;letter-spacing:0.5px;text-transform:uppercase;color:#000000;mso-line-height-rule:exactly;\\\">{e(title)}</p>'''\\nnew='''<p class=\\\"tb\\\" style=\\\"margin:0 0 6px 0;font-family:Akrobat,'Arial Narrow',Arial,sans-serif;font-size:20px;line-height:22px;font-weight:bold;letter-spacing:0.5px;text-transform:uppercase;white-space:nowrap;color:#000000;mso-line-height-rule:exactly;\\\">{e(title)}</p>'''\\nassert s.count(old)==1; p.write_text(s.replace(old,new))\\nEOF\\n.venv/bin/python build.py --preview 2>&1 | grep -E \\\"index|preview|figma|Error\\\"; S=/private/tmp/claude-501/-Users-andreea-Documents-iosifmihai/53219303-a7f1-426e-bbd3-6618297ffa4e/scratchpad; .venv/bin/python -c \\\"\\nfrom PIL import Image\\nImage.open('preview.png').crop((0,2150,600,2400)).save('$S/usp-d.png')\\nm=Image.open('preview-mobile.png'); print(m.size)\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:00:13.461Z",
+      "lastAccessed": "2026-10-13T12:00:13.461Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:00:13.461Z"
+    }
+  },
+  "version": "3.0.0"
+}

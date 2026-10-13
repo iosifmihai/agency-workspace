@@ -8,6 +8,42 @@
       "lastAccessed": "2026-10-11T16:14:48.411Z",
       "accessCount": 0,
       "expiresAt": "2026-11-10T16:14:48.411Z"
+    },
+    "cmd-1791827938483": {
+      "key": "cmd-1791827938483",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && grep -rn -i 'kinga\\\\|recenzie\\\\b\\\\|„.*”.*(.*Pankees\\\\|Mix)' discovery.md emails/welcome-0*/copy.md | head -20\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:58:58.483Z",
+      "lastAccessed": "2026-10-12T17:58:58.483Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:58:58.483Z"
+    },
+    "cmd-1791882237186": {
+      "key": "cmd-1791882237186",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && ls -la && echo --- && ls -la emails && echo --- && find emails -maxdepth 3 -not -path '*/.claude-flow*' | head -100\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T09:03:57.186Z",
+      "lastAccessed": "2026-10-13T09:03:57.186Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T09:03:57.186Z"
+    },
+    "cmd-1791893898447": {
+      "key": "cmd-1791893898447",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites && grep -n -i \\\"budinc\\\\|Prăjituri\\\\|categori\\\" discovery.md | head -12; grep -n \\\"Irina A\\\\|Andreea H\\\\|Liliana F\\\" emails/welcome-03/copy.md | head -6; grep -n -i \\\"kaufland\\\" discovery.md | head -3\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:18:18.447Z",
+      "lastAccessed": "2026-10-13T12:18:18.447Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:18:18.447Z"
+    },
+    "cmd-1791893931225": {
+      "key": "cmd-1791893931225",
+      "value": "{\"command\":\"sed -n 215,240p discovery.md; grep -n -i \\\"budinc\\\" -r emails/welcome-0*/copy.md emails/website-abandoned/email-01/strategy.md | head -8\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-13T12:18:51.225Z",
+      "lastAccessed": "2026-10-13T12:18:51.225Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-12T12:18:51.225Z"
     }
   },
   "version": "3.0.0"

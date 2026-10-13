@@ -1,0 +1,14 @@
+{
+  "entries": {
+    "cmd-1791827902729": {
+      "key": "cmd-1791827902729",
+      "value": "{\"command\":\"cd /Users/andreea/Documents/iosifmihai/clients/lucasbites/emails/checkout-started && ls -la email-02/refs email-02/images email-02/assets; grep -rn -i 'recenz\\\\|review' ../../discovery.md | head -20\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-10-12T17:58:22.729Z",
+      "lastAccessed": "2026-10-12T17:58:22.729Z",
+      "accessCount": 0,
+      "expiresAt": "2026-11-11T17:58:22.729Z"
+    }
+  },
+  "version": "3.0.0"
+}
